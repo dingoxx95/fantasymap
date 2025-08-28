@@ -1,9 +1,12 @@
 (function () {
     // ---- utility
     const DEFAULT_NODE_COLORS = {
-        "Letteratura": "#66c2a5",
-        "GdR/GdT": "#8da0cb",
-        "Videogiochi": "#fc8d62"
+        "Literature": "#66c2a5",
+        "RPG/Board Games": "#8da0cb",
+        "Video Games": "#fc8d62",
+        "Cinema/TV": "#e78ac3",
+        "Comics": "#a6d854",
+        "Mythology": "#ffd92f"
     };
     const REL_COLORS = {
         "lit": "#1b9e77",
@@ -18,12 +21,12 @@
         "generated": "2025-08-28T01:25:00Z",
         "styleLegend": {
             "nodeColors": {
-                "Letteratura": "#66c2a5",
-                "GdR/GdT": "#8da0cb",
-                "Videogiochi": "#fc8d62",
+                "Literature": "#66c2a5",
+                "RPG/Board Games": "#8da0cb",
+                "Video Games": "#fc8d62",
                 "Cinema/TV": "#e78ac3",
-                "Fumetti": "#a6d854",
-                "Mitologia": "#ffd92f"
+                "Comics": "#a6d854",
+                "Mythology": "#ffd92f"
             },
             "edgeColors": {
                 "lit": "#1b9e77",
@@ -61,21 +64,25 @@
                     'text-halign': 'center',
                     'text-valign': 'center',
                     'label': ele => labelFor(ele),
-                    'width': 'label',
-                    'height': 'label',
-                    'padding': '6px 8px',
+                    'width': ele => getNodeDimension(ele) + 'px',
+                    'height': ele => getNodeDimension(ele) + 'px',
                     'text-wrap': 'wrap',
-                    'text-max-width': 220,
-                    'font-size': '10px'
+                    'text-max-width': ele => Math.max(180, getNodeDimension(ele) * 0.8),
+                    'font-size': ele => {
+                        const scale = getNodeSize(ele);
+                        return Math.max(8, 10 * scale) + 'px';
+                    }
                 }
             },
             {
                 selector: 'edge',
                 style: {
-                    'width': 1.6,
+                    'width': 2,
                     'line-color': ele => getEdgeColor(ele),
                     'target-arrow-color': ele => getEdgeColor(ele),
                     'target-arrow-shape': 'triangle',
+                    'target-arrow-size': 12,
+                    'arrow-scale': 1.5,
                     'curve-style': 'bezier',
                     'opacity': 0.95
                 }
@@ -87,8 +94,8 @@
         layout: { name: 'dagre', rankDir: 'TB', nodeSep: 15, rankSep: 40, edgeSep: 5 }
     });
 
-    // dinamica globale
-    let CURRENT = null; // json caricato (con styleLegend opzionale)
+    // global state
+    let CURRENT = null; // loaded json (with optional styleLegend)
     let CAT_COLORS = { ...DEFAULT_NODE_COLORS };
     let REL_COLOR_MAP = { ...REL_COLORS };
 
@@ -105,8 +112,52 @@
     }
 
     function getNodeColor(ele) {
-        const cat = ele.data('category') || 'Letteratura';
+        const cat = ele.data('category') || 'Literature';
         return CAT_COLORS[cat] || DEFAULT_NODE_COLORS[cat] || '#7aa7c7';
+    }
+    function getNodeSize(ele) {
+        const degree = ele.degree();
+        // Much more aggressive scaling: 1.0 to 4.0
+        const connectionBonus = 1 + Math.min(degree * 0.15, 3.0);
+        return connectionBonus;
+    }
+    function calculateTextSize(text, fontSize = 10) {
+        // Rough estimation: average character width is ~0.6 of fontSize
+        const charWidth = fontSize * 0.6;
+        const lineHeight = fontSize * 1.2;
+        
+        // Wrap text at ~25 characters for circles
+        const maxCharsPerLine = 25;
+        const words = text.split(' ');
+        let lines = [''];
+        let currentLine = 0;
+        
+        for (const word of words) {
+            if ((lines[currentLine] + ' ' + word).length > maxCharsPerLine) {
+                currentLine++;
+                lines[currentLine] = word;
+            } else {
+                lines[currentLine] = lines[currentLine] ? lines[currentLine] + ' ' + word : word;
+            }
+        }
+        
+        const textWidth = Math.max(...lines.map(line => line.length * charWidth));
+        const textHeight = lines.length * lineHeight;
+        
+        // Return diameter needed for a circle (add padding)
+        return Math.max(textWidth, textHeight) + 20; // 20px padding
+    }
+    function getNodeDimension(ele) {
+        const degree = ele.degree();
+        const scale = getNodeSize(ele);
+        const label = labelFor(ele) || '';
+        const fontSize = Math.max(8, 10 * scale);
+        
+        // Calculate minimum size needed for text
+        const textBasedSize = calculateTextSize(label, fontSize);
+        
+        // Apply scaling to the text-based size
+        return Math.max(60, textBasedSize * scale);
     }
     function getEdgeColor(ele) {
         const c = ele.data('color');
@@ -140,14 +191,14 @@
 
     // ---- load elements
     function loadElements(json) {
-        // supporta: {elements:{nodes,edges}} oppure direttamente {nodes,edges}
+        // supports: {elements:{nodes,edges}} or directly {nodes,edges}
         const els = json.elements ? json.elements : json;
         if (!els || !Array.isArray(els.nodes) || !Array.isArray(els.edges)) {
-            alert('JSON non valido: devo trovare elements.nodes e elements.edges (o nodes/edges alla radice).');
+            alert('Invalid JSON: must find elements.nodes and elements.edges (or nodes/edges at root).');
             return;
         }
         CURRENT = json;
-        // colori custom se presenti
+        // custom colors if present
         if (json.styleLegend && json.styleLegend.nodeColors) {
             CAT_COLORS = { ...DEFAULT_NODE_COLORS, ...json.styleLegend.nodeColors };
         }
@@ -157,7 +208,7 @@
 
         cy.elements().remove();
         cy.add(els);
-        buildFilters();       // filtri da categorie/relazioni effettivamente presenti
+        buildFilters();       // filters from actually present categories/relations
         refreshLabels();
         applyLayout();
         cy.fit();
@@ -200,7 +251,7 @@
                 const on = enabled.has(n.data('category'));
                 n.toggleClass('hidden', !on);
             });
-            // nascondi archi che collegano nodi nascosti
+            // hide edges connecting hidden nodes
             cy.edges().forEach(e => {
                 const on = e.source().visible() && e.target().visible();
                 e.toggleClass('hidden', !on);
@@ -226,7 +277,20 @@
             return { name: 'breadthfirst', directed: true, spacingFactor: 1.5, padding: 50 };
         }
         if (name === 'cose') {
-            return { name: 'cose', padding: 20, nodeRepulsion: 8000, gravity: 1, numIter: 2500 };
+            return { 
+                name: 'cose', 
+                padding: 200, 
+                nodeRepulsion: 300000, 
+                idealEdgeLength: 400,
+                edgeElasticity: 40,
+                gravity: 1.2, 
+                numIter: 5000,
+                avoidOverlap: true,
+                nodeOverlap: 120,
+                coolingFactor: 0.9,
+                minTemp: 0.5,
+                componentSpacing: 250
+            };
         }
         if (name === 'concentric') {
             return { name: 'concentric', minNodeSpacing: 20, padding: 30 };
@@ -268,7 +332,7 @@
         const png64 = cy.png({ full: true, scale: 2, bg: '#0d1319' });
         const a = document.createElement('a');
         a.href = png64;
-        a.download = 'mappa_fantasy.png';
+        a.download = 'fantasy_map.png';
         a.click();
     }
 
@@ -282,7 +346,7 @@
                 const json = JSON.parse(reader.result);
                 loadElements(json);
             } catch (err) {
-                alert('JSON non valido: ' + err.message);
+                alert('Invalid JSON: ' + err.message);
             }
         };
         reader.readAsText(f);
@@ -303,7 +367,7 @@
                     const json = JSON.parse(reader.result);
                     loadElements(json);
                 } catch (err) {
-                    alert('JSON non valido: ' + err.message);
+                    alert('Invalid JSON: ' + err.message);
                 }
             };
             reader.readAsText(f);
@@ -319,6 +383,6 @@
     $('#chkShort, #chkWrap').on('change', refreshLabels);
     $('#layoutSel').on('change', applyLayout);
 
-    // ---- avvio con demo minima
+    // ---- startup with minimal demo
     getElements();
 })();

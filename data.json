@@ -4,7 +4,7 @@
                 "id": "beowulf800",
                 "label": "Beowulf (VIII secolo)",
                 "year": 800,
-                "category": "Mitologia"
+                "category": "Mythology"
             }
         },
         {
@@ -12,7 +12,7 @@
                 "id": "edda1220",
                 "label": "Edda di Snorri (1220)",
                 "year": 1220,
-                "category": "Mitologia"
+                "category": "Mythology"
             }
         },
         {
@@ -20,7 +20,7 @@
                 "id": "arthurian1136",
                 "label": "Ciclo Arturiano - Historia Regum Britanniae (1136)",
                 "year": 1136,
-                "category": "Mitologia"
+                "category": "Mythology"
             }
         },
         {
@@ -28,7 +28,7 @@
                 "id": "malory1485",
                 "label": "Thomas Malory - Le Morte d'Arthur (1485)",
                 "year": 1485,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -36,7 +36,7 @@
                 "id": "spenser1590",
                 "label": "Edmund Spenser - The Faerie Queene (1590)",
                 "year": 1590,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -44,7 +44,7 @@
                 "id": "shakespeare1611",
                 "label": "William Shakespeare - The Tempest (1611)",
                 "year": 1611,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -52,7 +52,7 @@
                 "id": "walpole1764",
                 "label": "Horace Walpole - The Castle of Otranto (1764)",
                 "year": 1764,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -60,7 +60,7 @@
                 "id": "radcliffe1794",
                 "label": "Ann Radcliffe - The Mysteries of Udolpho (1794)",
                 "year": 1794,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -68,7 +68,7 @@
                 "id": "lewis1796",
                 "label": "Matthew Lewis - The Monk (1796)",
                 "year": 1796,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -76,7 +76,7 @@
                 "id": "goethe1808",
                 "label": "Goethe - Faust (1808)",
                 "year": 1808,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -84,7 +84,7 @@
                 "id": "grimm1812",
                 "label": "Fratelli Grimm - Fiabe (1812)",
                 "year": 1812,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -92,7 +92,7 @@
                 "id": "coleridge1798",
                 "label": "S.T. Coleridge – La ballata del vecchio marinaio (1798)",
                 "year": 1798,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -100,7 +100,7 @@
                 "id": "hoffmann1814",
                 "label": "E.T.A. Hoffmann – Il vaso d'oro (1814)",
                 "year": 1814,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -108,7 +108,7 @@
                 "id": "shelley1818",
                 "label": "Mary Shelley – Frankenstein (1818)",
                 "year": 1818,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -116,7 +116,7 @@
                 "id": "poe1840",
                 "label": "Edgar Allan Poe – Racconti del terrore (1839–49)",
                 "year": 1840,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -124,7 +124,7 @@
                 "id": "stoker1897",
                 "label": "Bram Stoker – Dracula (1897)",
                 "year": 1897,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -132,7 +132,7 @@
                 "id": "wilde1890",
                 "label": "Oscar Wilde – The Picture of Dorian Gray (1890)",
                 "year": 1890,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -140,7 +140,7 @@
                 "id": "wells1895",
                 "label": "H.G. Wells – The Time Machine (1895)",
                 "year": 1895,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -148,7 +148,7 @@
                 "id": "macdonald1858",
                 "label": "George MacDonald – Phantastes (1858)",
                 "year": 1858,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -156,7 +156,7 @@
                 "id": "machen1894",
                 "label": "Arthur Machen – The Great God Pan (1894)",
                 "year": 1894,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -164,7 +164,7 @@
                 "id": "chambers1895",
                 "label": "R.W. Chambers – Il Re in Giallo (1895)",
                 "year": 1895,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -172,7 +172,7 @@
                 "id": "morris1896",
                 "label": "William Morris – The Well at the World's End (1896)",
                 "year": 1896,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -180,7 +180,7 @@
                 "id": "mrjames1904",
                 "label": "M.R. James – Ghost Stories of an Antiquary (1904)",
                 "year": 1904,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -188,7 +188,7 @@
                 "id": "dunsany1905",
                 "label": "Lord Dunsany – The Gods of Pegāna (1905)",
                 "year": 1905,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -196,7 +196,7 @@
                 "id": "burroughs1912",
                 "label": "Edgar Rice Burroughs – Tarzan/Barsoom (1912)",
                 "year": 1912,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -204,7 +204,7 @@
                 "id": "edd1922",
                 "label": "E.R. Eddison – The Worm Ouroboros (1922)",
                 "year": 1922,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -212,7 +212,7 @@
                 "id": "lovecraft1928",
                 "label": "H.P. Lovecraft – Cthulhu Mythos (1920–30)",
                 "year": 1928,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -220,7 +220,7 @@
                 "id": "cas1931",
                 "label": "Clark Ashton Smith – Hyperborea/Zothique (1931–)",
                 "year": 1931,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -228,7 +228,7 @@
                 "id": "howard1932",
                 "label": "Robert E. Howard – Conan (1932)",
                 "year": 1932,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -236,7 +236,7 @@
                 "id": "leiber1939",
                 "label": "Fritz Leiber – Fafhrd and the Gray Mouser (1939–)",
                 "year": 1939,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -244,7 +244,7 @@
                 "id": "peake1946",
                 "label": "Mervyn Peake – Gormenghast (1946–59)",
                 "year": 1946,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -252,7 +252,7 @@
                 "id": "lewis1950",
                 "label": "C.S. Lewis – Le Cronache di Narnia (1950–56)",
                 "year": 1950,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -260,7 +260,7 @@
                 "id": "tolkien1954",
                 "label": "J.R.R. Tolkien – Il Signore degli Anelli (1954-55)",
                 "year": 1954,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -268,7 +268,7 @@
                 "id": "white1958",
                 "label": "T.H. White – The Once and Future King (1958)",
                 "year": 1958,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -276,7 +276,7 @@
                 "id": "tolkien1977",
                 "label": "J.R.R. Tolkien – Il Silmarillion (1977)",
                 "year": 1977,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -284,7 +284,7 @@
                 "id": "moorcock1961",
                 "label": "Michael Moorcock – Elric di Melniboné (1961)",
                 "year": 1961,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -292,7 +292,7 @@
                 "id": "anderson1961",
                 "label": "Poul Anderson – Three Hearts & Three Lions (1961)",
                 "year": 1961,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -300,7 +300,7 @@
                 "id": "leGuin1968",
                 "label": "U.K. Le Guin – Earthsea (1968–2001)",
                 "year": 1968,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -308,7 +308,7 @@
                 "id": "zelazny1970",
                 "label": "Roger Zelazny – Cronache di Ambra (1970–91)",
                 "year": 1970,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -316,7 +316,7 @@
                 "id": "donaldson1977",
                 "label": "S.R. Donaldson – Thomas Covenant (1977–)",
                 "year": 1977,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -324,7 +324,7 @@
                 "id": "brooks1977",
                 "label": "Terry Brooks – La Spada di Shannara (1977)",
                 "year": 1977,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -332,7 +332,7 @@
                 "id": "feist1982",
                 "label": "R. Feist – Riftwar Saga (1982–)",
                 "year": 1982,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -340,7 +340,7 @@
                 "id": "king1982",
                 "label": "Stephen King – La Torre Nera (1982–2012)",
                 "year": 1982,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -348,7 +348,7 @@
                 "id": "pratchett1983",
                 "label": "Terry Pratchett – Discworld (1983–2015)",
                 "year": 1983,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -356,7 +356,7 @@
                 "id": "cook1984",
                 "label": "Glen Cook – The Black Company (1984–)",
                 "year": 1984,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -364,7 +364,7 @@
                 "id": "salvatore1988",
                 "label": "R.A. Salvatore – Drizzt / Forgotten Realms (1988–)",
                 "year": 1988,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -372,7 +372,7 @@
                 "id": "gaimanSandman1989",
                 "label": "Neil Gaiman – Sandman (1989–96)",
                 "year": 1989,
-                "category": "Fumetti"
+                "category": "Comics"
             }
         },
         {
@@ -380,7 +380,7 @@
                 "id": "jordan1990",
                 "label": "Robert Jordan – The Wheel of Time (1990–2013)",
                 "year": 1990,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -388,7 +388,7 @@
                 "id": "sapkowski1990",
                 "label": "A. Sapkowski – The Witcher (1990–2013)",
                 "year": 1990,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -396,7 +396,7 @@
                 "id": "gaiman1991",
                 "label": "Neil Gaiman – Good Omens (1991)",
                 "year": 1991,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -404,7 +404,7 @@
                 "id": "goodkind1994",
                 "label": "T. Goodkind – Sword of Truth (1994–)",
                 "year": 1994,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -412,7 +412,7 @@
                 "id": "hobb1995",
                 "label": "Robin Hobb – Farseer (1995–)",
                 "year": 1995,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -420,7 +420,7 @@
                 "id": "martin1996",
                 "label": "G.R.R. Martin – A Song of Ice and Fire (1996–)",
                 "year": 1996,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -428,7 +428,7 @@
                 "id": "miev2000",
                 "label": "China Miéville – Perdido Street Station (2000)",
                 "year": 2000,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -436,7 +436,7 @@
                 "id": "gaiman2001",
                 "label": "Neil Gaiman – American Gods (2001)",
                 "year": 2001,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -444,7 +444,7 @@
                 "id": "paolini2002",
                 "label": "Christopher Paolini – Eragon (2002)",
                 "year": 2002,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -452,7 +452,7 @@
                 "id": "troisi2004",
                 "label": "Licia Troisi – Cronache del Mondo Emerso (2004)",
                 "year": 2004,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -460,7 +460,7 @@
                 "id": "aberc2006",
                 "label": "Joe Abercrombie – The First Law (2006–)",
                 "year": 2006,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -468,7 +468,7 @@
                 "id": "rothfuss2007",
                 "label": "Patrick Rothfuss – The Name of the Wind (2007)",
                 "year": 2007,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -476,7 +476,7 @@
                 "id": "lynch2006",
                 "label": "Scott Lynch – Gentleman Bastard (2006–)",
                 "year": 2006,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -484,7 +484,7 @@
                 "id": "sanderson2005",
                 "label": "Brandon Sanderson – Mistborn (2005–)",
                 "year": 2005,
-                "category": "Letteratura"
+                "category": "Literature"
             }
         },
         {
@@ -492,7 +492,7 @@
                 "id": "conan1970",
                 "label": "Conan Comics – Marvel/Dark Horse (1970–)",
                 "year": 1970,
-                "category": "Fumetti"
+                "category": "Comics"
             }
         },
         {
@@ -500,7 +500,7 @@
                 "id": "elfquest1978",
                 "label": "Wendy & Richard Pini – ElfQuest (1978–)",
                 "year": 1978,
-                "category": "Fumetti"
+                "category": "Comics"
             }
         },
         {
@@ -508,7 +508,7 @@
                 "id": "hellboy1993",
                 "label": "Mike Mignola – Hellboy (1993–)",
                 "year": 1993,
-                "category": "Fumetti"
+                "category": "Comics"
             }
         },
         {
@@ -588,7 +588,7 @@
                 "id": "chainmail1971",
                 "label": "Gygax & Perren – Chainmail (1971)",
                 "year": 1971,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -596,7 +596,7 @@
                 "id": "dnd1974",
                 "label": "Gygax & Arneson – Dungeons & Dragons (1974)",
                 "year": 1974,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -604,7 +604,7 @@
                 "id": "tnt1975",
                 "label": "Tunnels & Trolls – RPG (1975)",
                 "year": 1975,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -612,7 +612,7 @@
                 "id": "runequest1978",
                 "label": "RuneQuest – RPG (1978)",
                 "year": 1978,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -620,7 +620,7 @@
                 "id": "coc1981",
                 "label": "Chaosium – Call of Cthulhu RPG (1981)",
                 "year": 1981,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -628,7 +628,7 @@
                 "id": "warhammer1983",
                 "label": "Games Workshop – Warhammer Fantasy Battle (1983)",
                 "year": 1983,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -636,7 +636,7 @@
                 "id": "whfrp1986",
                 "label": "Games Workshop – Warhammer Fantasy Roleplay (1986)",
                 "year": 1986,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -644,7 +644,7 @@
                 "id": "heroquest1989",
                 "label": "MB/GW – HeroQuest (1989)",
                 "year": 1989,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -652,7 +652,7 @@
                 "id": "vampire1991",
                 "label": "White Wolf – Vampire: The Masquerade (1991)",
                 "year": 1991,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -660,7 +660,7 @@
                 "id": "mtg1993",
                 "label": "Wizards – Magic: The Gathering (1993)",
                 "year": 1993,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -668,7 +668,7 @@
                 "id": "7thsea1999",
                 "label": "AEG – 7th Sea (1999)",
                 "year": 1999,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -676,7 +676,7 @@
                 "id": "dnd3e2000",
                 "label": "Wizards – D&D 3rd Edition (2000)",
                 "year": 2000,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -684,7 +684,7 @@
                 "id": "pathfinder2009",
                 "label": "Paizo – Pathfinder RPG (2009)",
                 "year": 2009,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -692,7 +692,7 @@
                 "id": "gloomhaven2017",
                 "label": "Cephalofair – Gloomhaven (2017)",
                 "year": 2017,
-                "category": "GdR/GdT"
+                "category": "RPG/Board Games"
             }
         },
         {
@@ -700,7 +700,7 @@
                 "id": "adventure1976",
                 "label": "Crowther & Woods – Colossal Cave Adventure (1976)",
                 "year": 1976,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -708,7 +708,7 @@
                 "id": "zork1980",
                 "label": "Infocom – Zork (1980)",
                 "year": 1980,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -716,7 +716,7 @@
                 "id": "ultima1981",
                 "label": "Origin – Ultima (1981)",
                 "year": 1981,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -724,7 +724,7 @@
                 "id": "wizardry1981",
                 "label": "Sir-Tech – Wizardry (1981)",
                 "year": 1981,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -732,7 +732,7 @@
                 "id": "bards1985",
                 "label": "Interplay – The Bard's Tale (1985)",
                 "year": 1985,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -740,7 +740,7 @@
                 "id": "ff1987",
                 "label": "Square – Final Fantasy (1987–)",
                 "year": 1987,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -748,7 +748,7 @@
                 "id": "dq1986",
                 "label": "Enix – Dragon Quest (1986)",
                 "year": 1986,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -756,7 +756,7 @@
                 "id": "zelda1986",
                 "label": "Nintendo – The Legend of Zelda (1986)",
                 "year": 1986,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -764,7 +764,7 @@
                 "id": "phantasy1987",
                 "label": "Sega – Phantasy Star (1987)",
                 "year": 1987,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -772,7 +772,7 @@
                 "id": "pools1988",
                 "label": "SSI – Pool of Radiance (1988)",
                 "year": 1988,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -780,7 +780,7 @@
                 "id": "diablo1996",
                 "label": "Blizzard – Diablo (1996)",
                 "year": 1996,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -788,7 +788,7 @@
                 "id": "bg1998",
                 "label": "BioWare – Baldur's Gate (1998)",
                 "year": 1998,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -796,7 +796,7 @@
                 "id": "iwd2000",
                 "label": "Black Isle – Icewind Dale (2000)",
                 "year": 2000,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -804,7 +804,7 @@
                 "id": "nwn2002",
                 "label": "BioWare – Neverwinter Nights (2002)",
                 "year": 2002,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -812,7 +812,7 @@
                 "id": "eternaldark2002",
                 "label": "Silicon Knights – Eternal Darkness (2002)",
                 "year": 2002,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -820,7 +820,7 @@
                 "id": "morrowind2002",
                 "label": "Bethesda – Morrowind (2002)",
                 "year": 2002,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -828,7 +828,7 @@
                 "id": "wow2004",
                 "label": "Blizzard – World of Warcraft (2004)",
                 "year": 2004,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -836,7 +836,7 @@
                 "id": "oblivion2006",
                 "label": "Bethesda – Oblivion (2006)",
                 "year": 2006,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -844,7 +844,7 @@
                 "id": "witcher2007",
                 "label": "CD Projekt Red – The Witcher (2007/11/15)",
                 "year": 2007,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -852,7 +852,7 @@
                 "id": "dragonage2009",
                 "label": "BioWare – Dragon Age: Origins (2009)",
                 "year": 2009,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -860,7 +860,7 @@
                 "id": "demons2009",
                 "label": "FromSoftware – Demon's Souls (2009)",
                 "year": 2009,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -868,7 +868,7 @@
                 "id": "darksouls2011",
                 "label": "FromSoftware – Dark Souls (2011)",
                 "year": 2011,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -876,7 +876,7 @@
                 "id": "skyrim2011",
                 "label": "Bethesda – Skyrim (2011)",
                 "year": 2011,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -884,7 +884,7 @@
                 "id": "shadowmordor2014",
                 "label": "Monolith – Shadow of Mordor (2014)",
                 "year": 2014,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -892,7 +892,7 @@
                 "id": "bloodborne2015",
                 "label": "FromSoftware – Bloodborne (2015)",
                 "year": 2015,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         },
         {
@@ -900,7 +900,7 @@
                 "id": "eldboss2022",
                 "label": "FromSoftware – Elden Ring (2022)",
                 "year": 2022,
-                "category": "Videogiochi"
+                "category": "Video Games"
             }
         }
     ],
@@ -2307,6 +2307,87 @@
                 "target": "witchertv2019",
                 "relation": "visual",
                 "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "shakespeare1611->tolkien1954",
+                "source": "shakespeare1611",
+                "target": "tolkien1954",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "shakespeare1611->lewis1950",
+                "source": "shakespeare1611",
+                "target": "lewis1950",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "wells1895->chambers1895",
+                "source": "wells1895",
+                "target": "chambers1895",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "wells1895->starwars1977",
+                "source": "wells1895",
+                "target": "starwars1977",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->jaws1975",
+                "source": "lovecraft1928",
+                "target": "jaws1975",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->starwars1977",
+                "source": "tolkien1954",
+                "target": "starwars1977",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "zork1980->neverending1984",
+                "source": "zork1980",
+                "target": "neverending1984",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->phantasy1987",
+                "source": "dnd1974",
+                "target": "phantasy1987",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->diablo1996",
+                "source": "dnd1974",
+                "target": "diablo1996",
+                "relation": "game",
+                "color": "#e7298a"
             }
         }
     ]
