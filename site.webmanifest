@@ -2,84 +2,23 @@
   "name": "Fantasy Map - Interactive Influence Network",
   "short_name": "Fantasy Map",
   "description": "Explore the intricate web of influences between fantasy literature, RPGs, video games, comics, cinema and mythology",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#0b0f14",
   "theme_color": "#0b0f14",
   "orientation": "any",
-  "scope": "/",
+  "scope": "./",
   "lang": "en",
   "categories": ["education", "entertainment", "reference"],
   "icons": [
     {
-      "src": "/favicon-16x16.png",
-      "sizes": "16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon-32x32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
+      "src": "./index.html",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "text/html",
+      "purpose": "any"
     }
   ],
-  "screenshots": [
-    {
-      "src": "/images/fantasy-map-screenshot-wide.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Fantasy Map - Desktop view showing the full network"
-    },
-    {
-      "src": "/images/fantasy-map-screenshot-narrow.png",
-      "sizes": "375x812",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Fantasy Map - Mobile view with touch controls"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Literature View",
-      "short_name": "Literature",
-      "description": "Focus on literary influences",
-      "url": "/?filter=literature",
-      "icons": [
-        {
-          "src": "/icons/literature-96x96.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "RPG & Games",
-      "short_name": "Games",
-      "description": "Focus on gaming influences",
-      "url": "/?filter=games",
-      "icons": [
-        {
-          "src": "/icons/games-96x96.png",
-          "sizes": "96x96"
-        }
-      ]
-    }
-  ],
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
+  "dir": "ltr",
+  "id": "fantasymap"
 }
