@@ -81,8 +81,8 @@
                     'line-color': ele => getEdgeColor(ele),
                     'target-arrow-color': ele => getEdgeColor(ele),
                     'target-arrow-shape': 'triangle',
-                    'target-arrow-size': 12,
-                    'arrow-scale': 1.5,
+                    'target-arrow-size': 144,
+                    'arrow-scale': 12.0,
                     'curve-style': 'bezier',
                     'opacity': 0.95
                 }

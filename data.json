@@ -513,6 +513,86 @@
         },
         {
             "data": {
+                "id": "watchmen1986",
+                "label": "Alan Moore – Watchmen (1986)",
+                "year": 1986,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
+                "id": "sandman1989",
+                "label": "Neil Gaiman – The Sandman (1989)",
+                "year": 1989,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
+                "id": "hellblazer1988",
+                "label": "Jamie Delano – Hellblazer (1988)",
+                "year": 1988,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
+                "id": "swampthing1982",
+                "label": "Alan Moore – Swamp Thing (1982)",
+                "year": 1982,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
+                "id": "fables2002",
+                "label": "Bill Willingham – Fables (2002)",
+                "year": 2002,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
+                "id": "saga2012",
+                "label": "Brian K. Vaughan – Saga (2012)",
+                "year": 2012,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
+                "id": "bone1991",
+                "label": "Jeff Smith – Bone (1991)",
+                "year": 1991,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
+                "id": "elfquest1978",
+                "label": "Wendy & Richard Pini – ElfQuest (1978)",
+                "year": 1978,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
+                "id": "miracleman1982",
+                "label": "Alan Moore – Miracleman (1982)",
+                "year": 1982,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
+                "id": "strangeritimes1999",
+                "label": "Warren Ellis – Planetary (1999)",
+                "year": 1999,
+                "category": "Comics"
+            }
+        },
+        {
+            "data": {
                 "id": "jaws1975",
                 "label": "Steven Spielberg – Jaws (1975)",
                 "year": 1975,
@@ -580,6 +660,86 @@
                 "id": "witchertv2019",
                 "label": "Netflix – The Witcher (2019–)",
                 "year": 2019,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "2001space1968",
+                "label": "Stanley Kubrick – 2001: A Space Odyssey (1968)",
+                "year": 1968,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "closeencounters1977",
+                "label": "Steven Spielberg – Close Encounters of the Third Kind (1977)",
+                "year": 1977,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "alien1979",
+                "label": "Ridley Scott – Alien (1979)",
+                "year": 1979,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "darkcrystal1982",
+                "label": "Jim Henson – The Dark Crystal (1982)",
+                "year": 1982,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "bladerunner1982",
+                "label": "Ridley Scott – Blade Runner (1982)",
+                "year": 1982,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "et1982",
+                "label": "Steven Spielberg – E.T. the Extra-Terrestrial (1982)",
+                "year": 1982,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "labyrinth1986",
+                "label": "Jim Henson – Labyrinth (1986)",
+                "year": 1986,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "princessbride1987",
+                "label": "Rob Reiner – The Princess Bride (1987)",
+                "year": 1987,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "willow1988",
+                "label": "Ron Howard – Willow (1988)",
+                "year": 1988,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "matrix1999",
+                "label": "The Wachowskis – The Matrix (1999)",
+                "year": 1999,
                 "category": "Cinema/TV"
             }
         },
@@ -692,6 +852,54 @@
                 "id": "gloomhaven2017",
                 "label": "Cephalofair – Gloomhaven (2017)",
                 "year": 2017,
+                "category": "RPG/Board Games"
+            }
+        },
+        {
+            "data": {
+                "id": "traveller1977",
+                "label": "Game Designers' Workshop – Traveller (1977)",
+                "year": 1977,
+                "category": "RPG/Board Games"
+            }
+        },
+        {
+            "data": {
+                "id": "runequest1978",
+                "label": "Chaosium – RuneQuest (1978)",
+                "year": 1978,
+                "category": "RPG/Board Games"
+            }
+        },
+        {
+            "data": {
+                "id": "champions1981",
+                "label": "Hero Games – Champions (1981)",
+                "year": 1981,
+                "category": "RPG/Board Games"
+            }
+        },
+        {
+            "data": {
+                "id": "gurps1986",
+                "label": "Steve Jackson Games – GURPS (1986)",
+                "year": 1986,
+                "category": "RPG/Board Games"
+            }
+        },
+        {
+            "data": {
+                "id": "shadowrun1989",
+                "label": "FASA – Shadowrun (1989)",
+                "year": 1989,
+                "category": "RPG/Board Games"
+            }
+        },
+        {
+            "data": {
+                "id": "fate2003",
+                "label": "Evil Hat – FATE (2003)",
+                "year": 2003,
                 "category": "RPG/Board Games"
             }
         },
@@ -2388,6 +2596,537 @@
                 "target": "diablo1996",
                 "relation": "game",
                 "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->hellblazer1988",
+                "source": "lovecraft1928",
+                "target": "hellblazer1988",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "chambers1895->swampthing1982",
+                "source": "chambers1895",
+                "target": "swampthing1982",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "shakespeare1611->sandman1989",
+                "source": "shakespeare1611",
+                "target": "sandman1989",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->elfquest1978",
+                "source": "tolkien1954",
+                "target": "elfquest1978",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "grimm1812->fables2002",
+                "source": "grimm1812",
+                "target": "fables2002",
+                "relation": "mythological",
+                "color": "#e6ab02"
+            }
+        },
+        {
+            "data": {
+                "id": "poe1840->watchmen1986",
+                "source": "poe1840",
+                "target": "watchmen1986",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->bone1991",
+                "source": "tolkien1954",
+                "target": "bone1991",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "swampthing1982->hellblazer1988",
+                "source": "swampthing1982",
+                "target": "hellblazer1988",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "miracleman1982->watchmen1986",
+                "source": "miracleman1982",
+                "target": "watchmen1986",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "sandman1989->fables2002",
+                "source": "sandman1989",
+                "target": "fables2002",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "howard1932->conan1970",
+                "source": "howard1932",
+                "target": "conan1970",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "wells1895->strangeritimes1999",
+                "source": "wells1895",
+                "target": "strangeritimes1999",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "starwars1977->saga2012",
+                "source": "starwars1977",
+                "target": "saga2012",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->sandman1989",
+                "source": "lovecraft1928",
+                "target": "sandman1989",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "beowulf800->sandman1989",
+                "source": "beowulf800",
+                "target": "sandman1989",
+                "relation": "mythological",
+                "color": "#e6ab02"
+            }
+        },
+        {
+            "data": {
+                "id": "poe1840->swampthing1982",
+                "source": "poe1840",
+                "target": "swampthing1982",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "lewis1950->bone1991",
+                "source": "lewis1950",
+                "target": "bone1991",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "howard1932->elfquest1978",
+                "source": "howard1932",
+                "target": "elfquest1978",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "watchmen1986->saga2012",
+                "source": "watchmen1986",
+                "target": "saga2012",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->saga2012",
+                "source": "tolkien1954",
+                "target": "saga2012",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "hellblazer1988->fables2002",
+                "source": "hellblazer1988",
+                "target": "fables2002",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "bone1991->fables2002",
+                "source": "bone1991",
+                "target": "fables2002",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "conan1970->elfquest1978",
+                "source": "conan1970",
+                "target": "elfquest1978",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "swampthing1982->sandman1989",
+                "source": "swampthing1982",
+                "target": "sandman1989",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "elfquest1978->bone1991",
+                "source": "elfquest1978",
+                "target": "bone1991",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "miracleman1982->sandman1989",
+                "source": "miracleman1982",
+                "target": "sandman1989",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "chambers1895->hellblazer1988",
+                "source": "chambers1895",
+                "target": "hellblazer1988",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "dunsany1905->sandman1989",
+                "source": "dunsany1905",
+                "target": "sandman1989",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "arthurian1136->bone1991",
+                "source": "arthurian1136",
+                "target": "bone1991",
+                "relation": "mythological",
+                "color": "#e6ab02"
+            }
+        },
+        {
+            "data": {
+                "id": "watchmen1986->strangeritimes1999",
+                "source": "watchmen1986",
+                "target": "strangeritimes1999",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "wells1895->2001space1968",
+                "source": "wells1895",
+                "target": "2001space1968",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->alien1979",
+                "source": "lovecraft1928",
+                "target": "alien1979",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "wells1895->closeencounters1977",
+                "source": "wells1895",
+                "target": "closeencounters1977",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->willow1988",
+                "source": "tolkien1954",
+                "target": "willow1988",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->darkcrystal1982",
+                "source": "tolkien1954",
+                "target": "darkcrystal1982",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "macdonald1858->labyrinth1986",
+                "source": "macdonald1858",
+                "target": "labyrinth1986",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "wells1895->et1982",
+                "source": "wells1895",
+                "target": "et1982",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "starwars1977->willow1988",
+                "source": "starwars1977",
+                "target": "willow1988",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "2001space1968->starwars1977",
+                "source": "2001space1968",
+                "target": "starwars1977",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "alien1979->matrix1999",
+                "source": "alien1979",
+                "target": "matrix1999",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "bladerunner1982->matrix1999",
+                "source": "bladerunner1982",
+                "target": "matrix1999",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "darkcrystal1982->labyrinth1986",
+                "source": "darkcrystal1982",
+                "target": "labyrinth1986",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "closeencounters1977->et1982",
+                "source": "closeencounters1977",
+                "target": "et1982",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "traveller1977->dnd1974",
+                "source": "traveller1977",
+                "target": "dnd1974",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "traveller1977->wells1895",
+                "source": "traveller1977",
+                "target": "wells1895",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "runequest1978->dnd1974",
+                "source": "runequest1978",
+                "target": "dnd1974",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "runequest1978->moorcock1961",
+                "source": "runequest1978",
+                "target": "moorcock1961",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "runequest1978->lovecraft1928",
+                "source": "runequest1978",
+                "target": "lovecraft1928",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "champions1981->dnd1974",
+                "source": "champions1981",
+                "target": "dnd1974",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "champions1981->conan1970",
+                "source": "champions1981",
+                "target": "conan1970",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "champions1981->watchmen1986",
+                "source": "champions1981",
+                "target": "watchmen1986",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "gurps1986->dnd1974",
+                "source": "gurps1986",
+                "target": "dnd1974",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "gurps1986->tolkien1954",
+                "source": "gurps1986",
+                "target": "tolkien1954",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "gurps1986->lovecraft1928",
+                "source": "gurps1986",
+                "target": "lovecraft1928",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "shadowrun1989->dnd1974",
+                "source": "shadowrun1989",
+                "target": "dnd1974",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "shadowrun1989->tolkien1954",
+                "source": "shadowrun1989",
+                "target": "tolkien1954",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "shadowrun1989->lovecraft1928",
+                "source": "shadowrun1989",
+                "target": "lovecraft1928",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "fate2003->dnd1974",
+                "source": "fate2003",
+                "target": "dnd1974",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "fate2003->conan1970",
+                "source": "fate2003",
+                "target": "conan1970",
+                "relation": "visual",
+                "color": "#7570b3"
             }
         }
     ]
