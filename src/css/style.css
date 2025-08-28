@@ -234,6 +234,10 @@ aside h2 {
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
+  :root {
+    --header-height: 60px; /* Default fallback */
+  }
+  
   html, body {
     font-size: 12px;
   }
@@ -338,7 +342,7 @@ aside h2 {
     display: block !important;
     grid-template-columns: none !important;
     padding: 4px !important;
-    height: calc(100vh - 85px) !important;
+    height: calc(100vh - var(--header-height, 60px)) !important;
     overflow: hidden !important;
   }
   
@@ -370,19 +374,10 @@ aside h2 {
     font-size: 10px;
     padding: 4px 6px;
   }
-  
-  #cy {
-    height: calc(100vh - 100px);
-    border-radius: 4px;
-  }
 }
 
 /* Landscape mobile */
 @media (max-width: 768px) and (orientation: landscape) {
-  #cy {
-    height: calc(100vh - 80px);
-  }
-  
   header {
     padding: 4px 8px;
   }

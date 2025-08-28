@@ -399,13 +399,25 @@
     $('#layoutSel').on('change', applyLayout);
 
     // ---- prevent canvas resize bug
+    function updateMobileHeaderHeight() {
+        if (isMobile()) {
+            const header = document.querySelector('header');
+            if (header) {
+                const headerHeight = header.offsetHeight + 8; // Add some padding
+                document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+            }
+        }
+    }
+
     window.addEventListener('resize', () => {
+        updateMobileHeaderHeight();
         cy.resize();
         cy.fit();
     });
 
     // Force initial resize to prevent expanding canvas
     setTimeout(() => {
+        updateMobileHeaderHeight();
         cy.resize();
         cy.fit();
     }, 100);
