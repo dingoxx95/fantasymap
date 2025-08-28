@@ -112,8 +112,8 @@
     let REL_COLOR_MAP = { ...REL_COLORS };
 
     function getElements() {
-        // Load JSON data directly from data.json
-        fetch('data.json')
+        // Load JSON data directly from srv/data.json
+        fetch('srv/data.json')
             .then(response => response.json())
             .then(data => {
                 loadElements(data);
@@ -412,13 +412,24 @@
 
     // ---- mobile filters toggle
     $('#mobileFilters').on('click', () => {
-        $('aside').toggleClass('show');
-        $('#mobileOverlay').toggleClass('show');
+        const $aside = $('aside');
+        const $overlay = $('#mobileOverlay');
+        const $button = $('#mobileFilters');
+        
+        $aside.toggleClass('show');
+        $overlay.toggleClass('show');
+        
+        // Update ARIA attributes for accessibility
+        const isExpanded = $aside.hasClass('show');
+        $button.attr('aria-expanded', isExpanded);
+        $overlay.attr('aria-hidden', !isExpanded);
     });
 
     $('#mobileOverlay').on('click', () => {
         $('aside').removeClass('show');
         $('#mobileOverlay').removeClass('show');
+        $('#mobileFilters').attr('aria-expanded', 'false');
+        $('#mobileOverlay').attr('aria-hidden', 'true');
     });
 
     // ---- startup with minimal demo

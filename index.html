@@ -1,93 +1,322 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebApplication">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fantasy Map / Weird & Derivatives — Cytoscape.js</title>
-
-  <!-- jQuery (stable CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-
-  <!-- Cytoscape.js (stable CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
-
-  <!-- Dagre + Cytoscape plugin (for hierarchical layout) -->
-  <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.min.js"></script>
-
-  <link rel="stylesheet" href="style.css">
-
+  <!-- Basic Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Fantasy Map - Interactive Influence Network of Fantasy, Sci-Fi & RPG Works</title>
+  <meta name="description" content="Explore the intricate web of influences between fantasy literature, RPGs, video games, comics, cinema and mythology. Interactive graph visualization of genre evolution from Tolkien to modern works.">
+  <meta name="keywords" content="fantasy map, influence network, fantasy literature, RPG games, sci-fi, interactive graph, Tolkien, D&D, fantasy influence, genre evolution, literature visualization">
+  <meta name="author" content="Fantasy Map Project">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="en">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fantasymap.example.com/">
+  <meta property="og:title" content="Fantasy Map - Interactive Influence Network">
+  <meta property="og:description" content="Explore the intricate web of influences between fantasy literature, RPGs, video games, comics, cinema and mythology.">
+  <meta property="og:image" content="https://fantasymap.example.com/images/fantasy-map-preview.png">
+  <meta property="og:image:alt" content="Fantasy Map - Interactive network visualization">
+  <meta property="og:site_name" content="Fantasy Map">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://fantasymap.example.com/">
+  <meta name="twitter:title" content="Fantasy Map - Interactive Influence Network">
+  <meta name="twitter:description" content="Explore the intricate web of influences between fantasy literature, RPGs, video games, comics, cinema and mythology.">
+  <meta name="twitter:image" content="https://fantasymap.example.com/images/fantasy-map-preview.png">
+  <meta name="twitter:image:alt" content="Fantasy Map - Interactive network visualization">
+  <meta name="twitter:creator" content="@fantasymap">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Fantasy Map",
+    "description": "Interactive visualization of influence networks between fantasy literature, RPGs, video games, comics, cinema and mythology",
+    "url": "https://fantasymap.example.com/",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript. Works with Chrome, Firefox, Safari, Edge.",
+    "author": {
+      "@type": "Organization",
+      "name": "Fantasy Map Project"
+    },
+    "keywords": "fantasy, literature, RPG, visualization, influence network, graph theory",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  
+  <!-- Favicon and Icons (disabled for development) -->
+  <!--
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  -->
+  <meta name="theme-color" content="#0b0f14">
+  <meta name="msapplication-TileColor" content="#0b0f14">
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/css/style.css">
+  
+  <!-- Critical CSS Inline (for above-the-fold content) -->
+  <style>
+    :root{--bg:#0b0f14;--text:#e9eef3;--panel:#11161c;--line:#24303b}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font:14px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial}
+    .loading{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--text);font-size:18px;z-index:1000}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+    .skip-link{position:absolute;top:-40px;left:6px;background:var(--panel);color:var(--text);padding:8px;text-decoration:none;z-index:1001}
+    .skip-link:focus{top:6px}
+  </style>
+  
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self' https:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://fantasymap.example.com/">
+  
+  <!-- Performance Hints -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Fantasy Map">
 </head>
 
 <body>
-  <header>
-    <h1>Fantasy Map</h1>
-    <div class="controls">
-      <input id="search" type="text" placeholder="Search nodes">
-      <button class="mobile-filter-toggle" id="mobileFilters">Filters</button>
-      <button id="btnFit">Fit</button>
-      <select id="layoutSel" title="Layout">
-        <option value="dagre">dagre</option>
-        <option value="cose">cose</option>        
-        <option value="breadthfirst">breadth</option>
-        <option value="concentric">concentric</option>
-        <option value="grid">grid</option>
-        <option value="circle">circle</option>
-      </select>
-      <button id="btnLayout">Layout</button>
-      <button id="btnClear">Clear</button>
-    </div>
-    <div class="legend">
-      <span class="pill"><span class="sw" style="background:#66c2a5"></span>Literature</span>
-      <span class="pill"><span class="sw" style="background:#8da0cb"></span>RPG/Board Games</span>
-      <span class="pill"><span class="sw" style="background:#fc8d62"></span>Video Games</span>
-      <span class="pill"><span class="sw" style="background:#e78ac3"></span>Cinema/TV</span>
-      <span class="pill"><span class="sw" style="background:#a6d854"></span>Comics</span>
-      <span class="pill"><span class="sw" style="background:#ffd92f"></span>Mythology</span>
-      <span class="pill small">Arrows — <span class="sw" style="background:#1b9e77"></span>literary <span class="sw"
-          style="background:#d95f02"></span>weird <span class="sw" style="background:#3182bd"></span>RPG <span
-          class="sw" style="background:#e7298a"></span>videogame <span class="sw"
-          style="background:#756bb1"></span>hybrid</span>
-    </div>
-  </header>
-
-  <div class="mobile-overlay" id="mobileOverlay"></div>
-
-  <main>
-    <aside>
-      <div class="section">
-        <h3>Category filters (nodes)</h3>
-        <div class="row" id="catFilters">
-          <!-- generated by script -->
-        </div>
+  <!-- Skip to Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Loading State -->
+  <div id="loading" class="loading" aria-hidden="true">Loading Fantasy Map...</div>
+  
+  <!-- Main Application -->
+  <div id="app" role="application" aria-label="Fantasy Map Interactive Visualization">
+    
+    <!-- Header Navigation -->
+    <header role="banner">
+      <h1>Fantasy Map</h1>
+      <nav class="controls" role="navigation" aria-label="Map controls">
+        <label for="search" class="sr-only">Search nodes</label>
+        <input 
+          id="search" 
+          type="search" 
+          placeholder="Search nodes" 
+          autocomplete="off"
+          aria-describedby="search-help"
+          role="searchbox"
+        >
+        <button 
+          class="mobile-filter-toggle" 
+          id="mobileFilters"
+          aria-expanded="false"
+          aria-controls="filters-panel"
+          aria-label="Toggle filters panel"
+        >
+          Filters
+        </button>
+        <button 
+          id="btnFit" 
+          type="button"
+          aria-label="Fit graph to screen"
+          title="Fit all nodes to viewport"
+        >
+          Fit
+        </button>
+        <label for="layoutSel" class="sr-only">Choose layout algorithm</label>
+        <select 
+          id="layoutSel" 
+          aria-label="Layout algorithm"
+          title="Select graph layout algorithm"
+        >
+          <option value="dagre">Dagre</option>
+          <option value="cose">Force</option>        
+          <option value="breadthfirst">Breadth</option>
+          <option value="concentric">Concentric</option>
+          <option value="grid">Grid</option>
+          <option value="circle">Circle</option>
+        </select>
+        <button 
+          id="btnLayout" 
+          type="button"
+          aria-label="Apply selected layout"
+          title="Apply the selected layout algorithm"
+        >
+          Layout
+        </button>
+        <button 
+          id="btnClear" 
+          type="button"
+          aria-label="Clear search"
+          title="Clear current search and highlights"
+        >
+          Clear
+        </button>
+      </nav>
+      
+      <!-- Legend -->
+      <div class="legend" role="img" aria-label="Graph legend showing categories and relationship types">
+        <span class="pill" role="img" aria-label="Literature category">
+          <span class="sw" style="background:#66c2a5" aria-hidden="true"></span>Literature
+        </span>
+        <span class="pill" role="img" aria-label="RPG/Board Games category">
+          <span class="sw" style="background:#8da0cb" aria-hidden="true"></span>RPG/Board Games
+        </span>
+        <span class="pill" role="img" aria-label="Video Games category">
+          <span class="sw" style="background:#fc8d62" aria-hidden="true"></span>Video Games
+        </span>
+        <span class="pill" role="img" aria-label="Cinema/TV category">
+          <span class="sw" style="background:#e78ac3" aria-hidden="true"></span>Cinema/TV
+        </span>
+        <span class="pill" role="img" aria-label="Comics category">
+          <span class="sw" style="background:#a6d854" aria-hidden="true"></span>Comics
+        </span>
+        <span class="pill" role="img" aria-label="Mythology category">
+          <span class="sw" style="background:#ffd92f" aria-hidden="true"></span>Mythology
+        </span>
+        <span class="pill small" role="img" aria-label="Relationship types">
+          Arrows — 
+          <span class="sw" style="background:#1b9e77" aria-hidden="true"></span>literary 
+          <span class="sw" style="background:#d95f02" aria-hidden="true"></span>weird 
+          <span class="sw" style="background:#3182bd" aria-hidden="true"></span>RPG 
+          <span class="sw" style="background:#e7298a" aria-hidden="true"></span>videogame 
+          <span class="sw" style="background:#756bb1" aria-hidden="true"></span>hybrid
+        </span>
       </div>
-
-      <div class="section">
-        <h3>Relation filters (edges)</h3>
-        <div class="row" id="relFilters">
-          <!-- generated by script -->
-        </div>
+      
+      <!-- Hidden help text for screen readers -->
+      <div id="search-help" class="sr-only">
+        Search for nodes by title, author, or year. Supports regular expressions.
       </div>
+    </header>
 
-      <div class="section">
-        <h3>Label options</h3>
-        <div class="row">
-          <label><input type="checkbox" id="chkShort" checked> Short labels</label>
-          <label><input type="checkbox" id="chkWrap" checked> Line wrap (≈25 char)</label>
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+    <!-- Main Content Area -->
+    <main id="main-content" role="main">
+      
+      <!-- Filters Sidebar -->
+      <aside id="filters-panel" role="complementary" aria-label="Filter controls">
+        <section class="section">
+          <h2>Category filters</h2>
+          <div class="row" id="catFilters" role="group" aria-label="Category filter checkboxes">
+            <!-- Generated by script -->
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Relationship filters</h2>
+          <div class="row" id="relFilters" role="group" aria-label="Relationship filter checkboxes">
+            <!-- Generated by script -->
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Display options</h2>
+          <div class="row">
+            <label>
+              <input type="checkbox" id="chkShort" checked aria-describedby="short-help"> 
+              Short labels
+            </label>
+            <label>
+              <input type="checkbox" id="chkWrap" checked aria-describedby="wrap-help"> 
+              Line wrap
+            </label>
+          </div>
+          <div id="short-help" class="sr-only">Truncate long node labels for better readability</div>
+          <div id="wrap-help" class="sr-only">Wrap long text in nodes to multiple lines</div>
+          
+          <p class="small">Tip: use "dagre" or "breadthfirst" for hierarchical graphs.</p>
+          <div class="hr"></div>
+          
+          <button 
+            id="btnPNG" 
+            type="button"
+            style="width: 100%; margin-bottom: 10px;"
+            aria-label="Export current view as PNG image"
+            title="Download the current graph as a PNG image"
+          >
+            Export PNG
+          </button>
+          <div class="hr"></div>
+        </section>
+      </aside>
+
+      <!-- Graph Visualization -->
+      <section class="graph-container">
+        <h2 class="sr-only">Interactive Graph Visualization</h2>
+        <div 
+          id="cy" 
+          role="img" 
+          aria-label="Interactive network graph showing relationships between fantasy works"
+          tabindex="0"
+          aria-describedby="graph-description"
+        ></div>
+        
+        <!-- Graph Description for Screen Readers -->
+        <div id="graph-description" class="sr-only">
+          This is an interactive network graph showing influence relationships between works of fantasy literature, 
+          role-playing games, video games, comics, cinema/TV, and mythology. Nodes represent individual works or 
+          franchises, and arrows show influence relationships. You can pan, zoom, and search to explore the connections.
         </div>
-        <p class="small">Tip: use "dagre" or "breadthfirst" for hierarchical graphs.</p>
-        <div class="hr"></div>
-        <button id="btnPNG" style="width: 100%; margin-bottom: 10px;">Export PNG</button>
-        <div class="hr"></div>
-      </div>
-    </aside>
+      </section>
+      
+    </main>
+  </div>
 
-    <div id="cy"></div>
-  </main>
+  <!-- Scripts -->
+  <!-- jQuery (stable CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" 
+          crossorigin="anonymous"></script>
 
-  <script src="script.js"></script>
+  <!-- Cytoscape.js (stable CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.28.1/dist/cytoscape.min.js" 
+          crossorigin="anonymous"></script>
 
+  <!-- Dagre + Cytoscape plugin (for hierarchical layout) -->
+  <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js" 
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.min.js" 
+          crossorigin="anonymous"></script>
+
+  <!-- Main Application Script -->
+  <script src="src/js/script.js"></script>
+
+  <!-- Remove Loading State -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(() => {
+        const loading = document.getElementById('loading');
+        if (loading) {
+          loading.style.display = 'none';
+        }
+      }, 1000);
+    });
+  </script>
+  
 </body>
-
 </html>
