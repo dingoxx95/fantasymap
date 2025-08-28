@@ -2,6 +2,10 @@
 
 An interactive visualization of influence networks between fantasy, sci-fi, and RPG works.
 
+## Preview
+
+https://fantasymap.gamer.gd/
+
 ## Description
 
 Fantasy Map is a web application that displays connections and influences between:
