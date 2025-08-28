@@ -44,13 +44,25 @@
         }
     };
 
+    // ---- mobile detection
+    function isMobile() {
+        return window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
     // ---- init cytoscape
     let cy = cytoscape({
         container: document.getElementById('cy'),
         pixelRatio: 1,
-        wheelSensitivity: 0.2,
+        wheelSensitivity: isMobile() ? 0.5 : 0.2,
         minZoom: 0.05,
         maxZoom: 4,
+        autoungrabify: false,
+        autounselectify: false,
+        autolock: false,
+        autoResize: true,
+        hideEdgesOnViewport: false,
+        touchTapThreshold: 8,
+        desktopTapThreshold: 4,
         style: [
             {
                 selector: 'node',
@@ -81,8 +93,8 @@
                     'line-color': ele => getEdgeColor(ele),
                     'target-arrow-color': ele => getEdgeColor(ele),
                     'target-arrow-shape': 'triangle',
-                    'target-arrow-size': 144,
-                    'arrow-scale': 12.0,
+                    'target-arrow-size': isMobile() ? 72 : 144,
+                    'arrow-scale': isMobile() ? 6.0 : 12.0,
                     'curve-style': 'bezier',
                     'opacity': 0.95
                 }
@@ -117,8 +129,10 @@
     }
     function getNodeSize(ele) {
         const degree = ele.degree();
-        // Much more aggressive scaling: 1.0 to 4.0
-        const connectionBonus = 1 + Math.min(degree * 0.15, 3.0);
+        // Scale down for mobile
+        const baseScale = isMobile() ? 0.7 : 1.0;
+        const maxBonus = isMobile() ? 2.0 : 3.0;
+        const connectionBonus = baseScale + Math.min(degree * 0.15, maxBonus);
         return connectionBonus;
     }
     function calculateTextSize(text, fontSize = 10) {
@@ -126,8 +140,8 @@
         const charWidth = fontSize * 0.6;
         const lineHeight = fontSize * 1.2;
         
-        // Wrap text at ~25 characters for circles
-        const maxCharsPerLine = 25;
+        // Adjust character limit for mobile
+        const maxCharsPerLine = isMobile() ? 20 : 25;
         const words = text.split(' ');
         let lines = [''];
         let currentLine = 0;
@@ -156,8 +170,9 @@
         // Calculate minimum size needed for text
         const textBasedSize = calculateTextSize(label, fontSize);
         
-        // Apply scaling to the text-based size
-        return Math.max(60, textBasedSize * scale);
+        // Apply scaling to the text-based size, smaller minimum for mobile
+        const minSize = isMobile() ? 45 : 60;
+        return Math.max(minSize, textBasedSize * scale);
     }
     function getEdgeColor(ele) {
         const c = ele.data('color');
@@ -382,6 +397,29 @@
     $('#btnClear').on('click', clearSearch);
     $('#chkShort, #chkWrap').on('change', refreshLabels);
     $('#layoutSel').on('change', applyLayout);
+
+    // ---- prevent canvas resize bug
+    window.addEventListener('resize', () => {
+        cy.resize();
+        cy.fit();
+    });
+
+    // Force initial resize to prevent expanding canvas
+    setTimeout(() => {
+        cy.resize();
+        cy.fit();
+    }, 100);
+
+    // ---- mobile filters toggle
+    $('#mobileFilters').on('click', () => {
+        $('aside').toggleClass('show');
+        $('#mobileOverlay').toggleClass('show');
+    });
+
+    $('#mobileOverlay').on('click', () => {
+        $('aside').removeClass('show');
+        $('#mobileOverlay').removeClass('show');
+    });
 
     // ---- startup with minimal demo
     getElements();

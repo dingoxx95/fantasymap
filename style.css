@@ -108,6 +108,8 @@ aside {
   border-radius: 12px;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 .section {
   margin-bottom: 12px;
@@ -143,4 +145,187 @@ input[type="checkbox"] {
 .hr {
   border-top: 1px dashed var(--line);
   margin: 8px 0;
+}
+
+.mobile-filter-toggle {
+  display: none; /* Hidden on desktop */
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  html, body {
+    font-size: 12px;
+  }
+  
+  header {
+    padding: 4px 6px;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  header h1 {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .controls {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 3px;
+    width: 100%;
+  }
+  
+  .controls > * {
+    font-size: 9px;
+    padding: 3px 4px;
+    border-radius: 4px;
+  }
+  
+  #search {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 2px;
+  }
+  
+  #mobileFilters {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #btnFit {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  #layoutSel {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  #btnLayout, #btnClear {
+    display: none; /* Hide on mobile to save space */
+  }
+  
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    font-size: 8px;
+    margin-top: 2px;
+  }
+  
+  .legend .pill {
+    padding: 1px 3px;
+    font-size: 8px;
+  }
+  
+  .legend .sw {
+    width: 8px;
+    height: 8px;
+  }
+  
+  aside {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 85%;
+    height: 100vh;
+    background: var(--panel);
+    border-right: 1px solid var(--line);
+    padding: 40px 8px 8px 8px;
+    transition: left 0.3s ease;
+    z-index: 10;
+    overflow-y: auto;
+    border-radius: 0;
+  }
+  
+  aside.show {
+    left: 0;
+  }
+  
+  .mobile-filter-toggle {
+    display: block;
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9;
+  }
+  
+  .mobile-overlay.show {
+    display: block;
+  }
+
+  .main, main {
+    display: block !important;
+    grid-template-columns: none !important;
+    padding: 4px !important;
+    height: calc(100vh - 85px) !important;
+    overflow: hidden !important;
+  }
+  
+  #cy {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 4px;
+    margin: 0;
+  }
+  
+  .row {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .row > * {
+    width: 100%;
+  }
+}@media (max-width: 480px) {
+  header {
+    padding: 6px;
+  }
+  
+  header h1 {
+    font-size: 12px;
+  }
+  
+  .controls > * {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+  
+  #cy {
+    height: calc(100vh - 100px);
+    border-radius: 4px;
+  }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  #cy {
+    height: calc(100vh - 80px);
+  }
+  
+  header {
+    padding: 4px 8px;
+  }
+  
+  .controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
