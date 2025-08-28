@@ -22,6 +22,7 @@ body {
   color: var(--text);
   font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
     Arial;
+  overflow-x: hidden;
 }
 header {
   position: sticky;
@@ -92,8 +93,9 @@ main {
   display: grid;
   grid-template-columns: 300px 1fr;
   gap: 12px;
-  height: calc(100% - 74px);
+  height: calc(100vh - 74px);
   padding: 12px;
+  overflow: hidden;
 }
 aside {
   background: var(--panel);
@@ -110,6 +112,8 @@ aside {
   width: 100%;
   overflow: hidden;
   position: relative;
+  min-height: 400px;
+  max-width: 100%;
 }
 .section {
   margin-bottom: 12px;
@@ -204,6 +208,8 @@ input[type="checkbox"] {
   flex: 1;
   display: flex;
   flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
 }
 
 /* Focus styles for accessibility */
