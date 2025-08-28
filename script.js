@@ -1,0 +1,324 @@
+(function () {
+    // ---- utility
+    const DEFAULT_NODE_COLORS = {
+        "Letteratura": "#66c2a5",
+        "GdR/GdT": "#8da0cb",
+        "Videogiochi": "#fc8d62"
+    };
+    const REL_COLORS = {
+        "lit": "#1b9e77",
+        "weird": "#d95f02",
+        "ttrpg": "#3182bd",
+        "game": "#e7298a",
+        "hybrid": "#756bb1"
+    };
+
+    const EXAMPLE = {
+        "format": "cytoscapeJSON",
+        "generated": "2025-08-28T01:25:00Z",
+        "styleLegend": {
+            "nodeColors": {
+                "Letteratura": "#66c2a5",
+                "GdR/GdT": "#8da0cb",
+                "Videogiochi": "#fc8d62",
+                "Cinema/TV": "#e78ac3",
+                "Fumetti": "#a6d854",
+                "Mitologia": "#ffd92f"
+            },
+            "edgeColors": {
+                "lit": "#1b9e77",
+                "weird": "#d95f02",
+                "ttrpg": "#3182bd",
+                "game": "#e7298a",
+                "hybrid": "#756bb1",
+                "mythological": "#e6ab02",
+                "visual": "#7570b3"
+            }
+        },
+        "elements": {
+            "nodes": [],
+            "edges": []
+        }
+    };
+
+    // ---- init cytoscape
+    let cy = cytoscape({
+        container: document.getElementById('cy'),
+        pixelRatio: 1,
+        wheelSensitivity: 0.2,
+        minZoom: 0.05,
+        maxZoom: 4,
+        style: [
+            {
+                selector: 'node',
+                style: {
+                    'shape': 'circle',
+                    'background-color': ele => getNodeColor(ele),
+                    'border-width': 1,
+                    'border-color': '#22303b',
+                    'color': 'black',
+                    'font-family': 'system-ui, Segoe UI, Roboto, Arial',
+                    'text-halign': 'center',
+                    'text-valign': 'center',
+                    'label': ele => labelFor(ele),
+                    'width': 'label',
+                    'height': 'label',
+                    'padding': '6px 8px',
+                    'text-wrap': 'wrap',
+                    'text-max-width': 220,
+                    'font-size': '10px'
+                }
+            },
+            {
+                selector: 'edge',
+                style: {
+                    'width': 1.6,
+                    'line-color': ele => getEdgeColor(ele),
+                    'target-arrow-color': ele => getEdgeColor(ele),
+                    'target-arrow-shape': 'triangle',
+                    'curve-style': 'bezier',
+                    'opacity': 0.95
+                }
+            },
+            { selector: '.faded', style: { 'opacity': 0.15 } },
+            { selector: '.hidden', style: { 'display': 'none' } },
+            { selector: '.highlight', style: { 'border-width': 2, 'border-color': '#f6c177', 'shadow-blur': 8, 'shadow-color': '#000', 'shadow-opacity': 0.4, 'shadow-offset-x': 0, 'shadow-offset-y': 1 } }
+        ],
+        layout: { name: 'dagre', rankDir: 'TB', nodeSep: 15, rankSep: 40, edgeSep: 5 }
+    });
+
+    // dinamica globale
+    let CURRENT = null; // json caricato (con styleLegend opzionale)
+    let CAT_COLORS = { ...DEFAULT_NODE_COLORS };
+    let REL_COLOR_MAP = { ...REL_COLORS };
+
+    function getElements() {
+        // Load JSON data directly from data.json
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                loadElements(data);
+            })
+            .catch(error => {
+                console.error('Error loading JSON data:', error);
+            });
+    }
+
+    function getNodeColor(ele) {
+        const cat = ele.data('category') || 'Letteratura';
+        return CAT_COLORS[cat] || DEFAULT_NODE_COLORS[cat] || '#7aa7c7';
+    }
+    function getEdgeColor(ele) {
+        const c = ele.data('color');
+        if (c) return c;
+        const rel = ele.data('relation');
+        return REL_COLOR_MAP[rel] || '#9aa6b2';
+    }
+    function shortLabel(s) {
+        if (!s) return '';
+        return s.length > 60 ? s.slice(0, 57) + '…' : s;
+    }
+    function wrapLabel(s, width = 25) {
+        if (!s) return '';
+        const words = s.split(' ');
+        let lines = [''], i = 0;
+        for (const w of words) {
+            if ((lines[i] + ' ' + w).length > width) { i++; lines[i] = w; }
+            else lines[i] = (lines[i] ? lines[i] + ' ' : '') + w;
+        }
+        return lines.join('\n');
+    }
+    function labelFor(ele) {
+        const L = ele.data('label') || '';
+        if ($('#chkWrap').prop('checked')) return wrapLabel(L, 25);
+        if ($('#chkShort').prop('checked')) return shortLabel(L);
+        return L;
+    }
+    function refreshLabels() {
+        cy.nodes().forEach(n => n.style('label', labelFor(n)));
+    }
+
+    // ---- load elements
+    function loadElements(json) {
+        // supporta: {elements:{nodes,edges}} oppure direttamente {nodes,edges}
+        const els = json.elements ? json.elements : json;
+        if (!els || !Array.isArray(els.nodes) || !Array.isArray(els.edges)) {
+            alert('JSON non valido: devo trovare elements.nodes e elements.edges (o nodes/edges alla radice).');
+            return;
+        }
+        CURRENT = json;
+        // colori custom se presenti
+        if (json.styleLegend && json.styleLegend.nodeColors) {
+            CAT_COLORS = { ...DEFAULT_NODE_COLORS, ...json.styleLegend.nodeColors };
+        }
+        if (json.styleLegend && json.styleLegend.edgeColors) {
+            REL_COLOR_MAP = { ...REL_COLORS, ...json.styleLegend.edgeColors };
+        }
+
+        cy.elements().remove();
+        cy.add(els);
+        buildFilters();       // filtri da categorie/relazioni effettivamente presenti
+        refreshLabels();
+        applyLayout();
+        cy.fit();
+    }
+
+    // ---- filters
+    function buildFilters() {
+        const cats = new Set(cy.nodes().map(n => n.data('category')).filter(Boolean));
+        const rels = new Set(cy.edges().map(e => e.data('relation')).filter(Boolean));
+
+        const $cat = $('#catFilters').empty();
+        const $rel = $('#relFilters').empty();
+
+        [...cats].sort().forEach(c => {
+            const color = CAT_COLORS[c] || '#556';
+            const id = 'cat_' + c.replace(/\W+/g, '_');
+            $cat.append(`
+        <label title="${c}">
+          <input type="checkbox" id="${id}" data-cat="${c}" checked>
+          <span class="sw" style="background:${color}"></span>${c}
+        </label>
+      `);
+        });
+
+        [...rels].sort().forEach(r => {
+            const color = REL_COLOR_MAP[r] || '#888';
+            const id = 'rel_' + r.replace(/\W+/g, '_');
+            $rel.append(`
+        <label title="${r}">
+          <input type="checkbox" id="${id}" data-rel="${r}" checked>
+          <span class="sw" style="background:${color}"></span>${r}
+        </label>
+      `);
+        });
+
+        // bind
+        $('#catFilters input[type=checkbox]').off('change').on('change', () => {
+            const enabled = new Set($('#catFilters input:checked').map((_, el) => $(el).data('cat')).get());
+            cy.nodes().forEach(n => {
+                const on = enabled.has(n.data('category'));
+                n.toggleClass('hidden', !on);
+            });
+            // nascondi archi che collegano nodi nascosti
+            cy.edges().forEach(e => {
+                const on = e.source().visible() && e.target().visible();
+                e.toggleClass('hidden', !on);
+            });
+        });
+
+        $('#relFilters input[type=checkbox]').off('change').on('change', () => {
+            const enabled = new Set($('#relFilters input:checked').map((_, el) => $(el).data('rel')).get());
+            cy.edges().forEach(e => {
+                const on = enabled.has(e.data('relation'));
+                e.toggleClass('hidden', !on);
+            });
+        });
+    }
+
+    // ---- layout
+    function getLayout() {
+        const name = $('#layoutSel').val();
+        if (name === 'dagre') {
+            return { name: 'dagre', rankDir: 'TB', nodeSep: 50, rankSep: 120, edgeSep: 20 };
+        }
+        if (name === 'breadthfirst') {
+            return { name: 'breadthfirst', directed: true, spacingFactor: 1.5, padding: 50 };
+        }
+        if (name === 'cose') {
+            return { name: 'cose', padding: 20, nodeRepulsion: 8000, gravity: 1, numIter: 2500 };
+        }
+        if (name === 'concentric') {
+            return { name: 'concentric', minNodeSpacing: 20, padding: 30 };
+        }
+        if (name === 'grid') {
+            return { name: 'grid', padding: 20, avoidOverlap: true };
+        }
+        if (name === 'circle') {
+            return { name: 'circle', padding: 20 };
+        }
+        return { name: 'dagre' };
+    }
+    function applyLayout() {
+        const l = cy.layout(getLayout());
+        l.run();
+    }
+
+    // ---- search
+    function clearSearch() {
+        cy.elements().removeClass('faded highlight');
+        $('#search').val('');
+    }
+    function doSearch(q) {
+        cy.elements().removeClass('highlight');
+        if (!q) { cy.elements().removeClass('faded'); return; }
+        let rx = null;
+        try { rx = new RegExp(q, 'i'); } catch (e) { rx = null; }
+        const matched = cy.nodes().filter(n => {
+            const lab = n.data('label') || '';
+            return rx ? rx.test(lab) : lab.toLowerCase().includes(q.toLowerCase());
+        });
+        cy.elements().addClass('faded');
+        matched.removeClass('faded').addClass('highlight');
+        if (matched.length) cy.fit(matched, 50);
+    }
+
+    // ---- export
+    function exportPNG() {
+        const png64 = cy.png({ full: true, scale: 2, bg: '#0d1319' });
+        const a = document.createElement('a');
+        a.href = png64;
+        a.download = 'mappa_fantasy.png';
+        a.click();
+    }
+
+    // ---- file input & dragdrop
+    $('#fileInput').on('change', (e) => {
+        const f = e.target.files && e.target.files[0];
+        if (!f) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+            try {
+                const json = JSON.parse(reader.result);
+                loadElements(json);
+            } catch (err) {
+                alert('JSON non valido: ' + err.message);
+            }
+        };
+        reader.readAsText(f);
+    });
+
+    const dz = document.getElementById('dropzone');
+    if (dz) {
+        dz.addEventListener('dragover', e => { e.preventDefault(); dz.style.borderColor = '#2e3944'; });
+        dz.addEventListener('dragleave', e => { dz.style.borderColor = 'var(--line)'; });
+        dz.addEventListener('drop', e => {
+            e.preventDefault();
+            dz.style.borderColor = 'var(--line)';
+            const f = e.dataTransfer.files && e.dataTransfer.files[0];
+            if (!f) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+                try {
+                    const json = JSON.parse(reader.result);
+                    loadElements(json);
+                } catch (err) {
+                    alert('JSON non valido: ' + err.message);
+                }
+            };
+            reader.readAsText(f);
+        });
+    }
+
+    // ---- binds
+    $('#btnFit').on('click', () => cy.fit());
+    $('#btnLayout').on('click', applyLayout);
+    $('#btnPNG').on('click', exportPNG);
+    $('#search').on('input', e => doSearch(e.target.value.trim()));
+    $('#btnClear').on('click', clearSearch);
+    $('#chkShort, #chkWrap').on('change', refreshLabels);
+    $('#layoutSel').on('change', applyLayout);
+
+    // ---- avvio con demo minima
+    getElements();
+})();

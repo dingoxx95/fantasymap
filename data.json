@@ -1,0 +1,2313 @@
+{   "nodes": [
+        {
+            "data": {
+                "id": "beowulf800",
+                "label": "Beowulf (VIII secolo)",
+                "year": 800,
+                "category": "Mitologia"
+            }
+        },
+        {
+            "data": {
+                "id": "edda1220",
+                "label": "Edda di Snorri (1220)",
+                "year": 1220,
+                "category": "Mitologia"
+            }
+        },
+        {
+            "data": {
+                "id": "arthurian1136",
+                "label": "Ciclo Arturiano - Historia Regum Britanniae (1136)",
+                "year": 1136,
+                "category": "Mitologia"
+            }
+        },
+        {
+            "data": {
+                "id": "malory1485",
+                "label": "Thomas Malory - Le Morte d'Arthur (1485)",
+                "year": 1485,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "spenser1590",
+                "label": "Edmund Spenser - The Faerie Queene (1590)",
+                "year": 1590,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "shakespeare1611",
+                "label": "William Shakespeare - The Tempest (1611)",
+                "year": 1611,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "walpole1764",
+                "label": "Horace Walpole - The Castle of Otranto (1764)",
+                "year": 1764,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "radcliffe1794",
+                "label": "Ann Radcliffe - The Mysteries of Udolpho (1794)",
+                "year": 1794,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "lewis1796",
+                "label": "Matthew Lewis - The Monk (1796)",
+                "year": 1796,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "goethe1808",
+                "label": "Goethe - Faust (1808)",
+                "year": 1808,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "grimm1812",
+                "label": "Fratelli Grimm - Fiabe (1812)",
+                "year": 1812,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "coleridge1798",
+                "label": "S.T. Coleridge – La ballata del vecchio marinaio (1798)",
+                "year": 1798,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "hoffmann1814",
+                "label": "E.T.A. Hoffmann – Il vaso d'oro (1814)",
+                "year": 1814,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "shelley1818",
+                "label": "Mary Shelley – Frankenstein (1818)",
+                "year": 1818,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "poe1840",
+                "label": "Edgar Allan Poe – Racconti del terrore (1839–49)",
+                "year": 1840,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "stoker1897",
+                "label": "Bram Stoker – Dracula (1897)",
+                "year": 1897,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "wilde1890",
+                "label": "Oscar Wilde – The Picture of Dorian Gray (1890)",
+                "year": 1890,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "wells1895",
+                "label": "H.G. Wells – The Time Machine (1895)",
+                "year": 1895,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "macdonald1858",
+                "label": "George MacDonald – Phantastes (1858)",
+                "year": 1858,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "machen1894",
+                "label": "Arthur Machen – The Great God Pan (1894)",
+                "year": 1894,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "chambers1895",
+                "label": "R.W. Chambers – Il Re in Giallo (1895)",
+                "year": 1895,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "morris1896",
+                "label": "William Morris – The Well at the World's End (1896)",
+                "year": 1896,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "mrjames1904",
+                "label": "M.R. James – Ghost Stories of an Antiquary (1904)",
+                "year": 1904,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "dunsany1905",
+                "label": "Lord Dunsany – The Gods of Pegāna (1905)",
+                "year": 1905,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "burroughs1912",
+                "label": "Edgar Rice Burroughs – Tarzan/Barsoom (1912)",
+                "year": 1912,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "edd1922",
+                "label": "E.R. Eddison – The Worm Ouroboros (1922)",
+                "year": 1922,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928",
+                "label": "H.P. Lovecraft – Cthulhu Mythos (1920–30)",
+                "year": 1928,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "cas1931",
+                "label": "Clark Ashton Smith – Hyperborea/Zothique (1931–)",
+                "year": 1931,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "howard1932",
+                "label": "Robert E. Howard – Conan (1932)",
+                "year": 1932,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "leiber1939",
+                "label": "Fritz Leiber – Fafhrd and the Gray Mouser (1939–)",
+                "year": 1939,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "peake1946",
+                "label": "Mervyn Peake – Gormenghast (1946–59)",
+                "year": 1946,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "lewis1950",
+                "label": "C.S. Lewis – Le Cronache di Narnia (1950–56)",
+                "year": 1950,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954",
+                "label": "J.R.R. Tolkien – Il Signore degli Anelli (1954-55)",
+                "year": 1954,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "white1958",
+                "label": "T.H. White – The Once and Future King (1958)",
+                "year": 1958,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977",
+                "label": "J.R.R. Tolkien – Il Silmarillion (1977)",
+                "year": 1977,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "moorcock1961",
+                "label": "Michael Moorcock – Elric di Melniboné (1961)",
+                "year": 1961,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "anderson1961",
+                "label": "Poul Anderson – Three Hearts & Three Lions (1961)",
+                "year": 1961,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "leGuin1968",
+                "label": "U.K. Le Guin – Earthsea (1968–2001)",
+                "year": 1968,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "zelazny1970",
+                "label": "Roger Zelazny – Cronache di Ambra (1970–91)",
+                "year": 1970,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "donaldson1977",
+                "label": "S.R. Donaldson – Thomas Covenant (1977–)",
+                "year": 1977,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "brooks1977",
+                "label": "Terry Brooks – La Spada di Shannara (1977)",
+                "year": 1977,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "feist1982",
+                "label": "R. Feist – Riftwar Saga (1982–)",
+                "year": 1982,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "king1982",
+                "label": "Stephen King – La Torre Nera (1982–2012)",
+                "year": 1982,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "pratchett1983",
+                "label": "Terry Pratchett – Discworld (1983–2015)",
+                "year": 1983,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "cook1984",
+                "label": "Glen Cook – The Black Company (1984–)",
+                "year": 1984,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "salvatore1988",
+                "label": "R.A. Salvatore – Drizzt / Forgotten Realms (1988–)",
+                "year": 1988,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "gaimanSandman1989",
+                "label": "Neil Gaiman – Sandman (1989–96)",
+                "year": 1989,
+                "category": "Fumetti"
+            }
+        },
+        {
+            "data": {
+                "id": "jordan1990",
+                "label": "Robert Jordan – The Wheel of Time (1990–2013)",
+                "year": 1990,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "sapkowski1990",
+                "label": "A. Sapkowski – The Witcher (1990–2013)",
+                "year": 1990,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "gaiman1991",
+                "label": "Neil Gaiman – Good Omens (1991)",
+                "year": 1991,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "goodkind1994",
+                "label": "T. Goodkind – Sword of Truth (1994–)",
+                "year": 1994,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "hobb1995",
+                "label": "Robin Hobb – Farseer (1995–)",
+                "year": 1995,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "martin1996",
+                "label": "G.R.R. Martin – A Song of Ice and Fire (1996–)",
+                "year": 1996,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "miev2000",
+                "label": "China Miéville – Perdido Street Station (2000)",
+                "year": 2000,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "gaiman2001",
+                "label": "Neil Gaiman – American Gods (2001)",
+                "year": 2001,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "paolini2002",
+                "label": "Christopher Paolini – Eragon (2002)",
+                "year": 2002,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "troisi2004",
+                "label": "Licia Troisi – Cronache del Mondo Emerso (2004)",
+                "year": 2004,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "aberc2006",
+                "label": "Joe Abercrombie – The First Law (2006–)",
+                "year": 2006,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "rothfuss2007",
+                "label": "Patrick Rothfuss – The Name of the Wind (2007)",
+                "year": 2007,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "lynch2006",
+                "label": "Scott Lynch – Gentleman Bastard (2006–)",
+                "year": 2006,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "sanderson2005",
+                "label": "Brandon Sanderson – Mistborn (2005–)",
+                "year": 2005,
+                "category": "Letteratura"
+            }
+        },
+        {
+            "data": {
+                "id": "conan1970",
+                "label": "Conan Comics – Marvel/Dark Horse (1970–)",
+                "year": 1970,
+                "category": "Fumetti"
+            }
+        },
+        {
+            "data": {
+                "id": "elfquest1978",
+                "label": "Wendy & Richard Pini – ElfQuest (1978–)",
+                "year": 1978,
+                "category": "Fumetti"
+            }
+        },
+        {
+            "data": {
+                "id": "hellboy1993",
+                "label": "Mike Mignola – Hellboy (1993–)",
+                "year": 1993,
+                "category": "Fumetti"
+            }
+        },
+        {
+            "data": {
+                "id": "jaws1975",
+                "label": "Steven Spielberg – Jaws (1975)",
+                "year": 1975,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "starwars1977",
+                "label": "George Lucas – Star Wars (1977)",
+                "year": 1977,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "conan1982",
+                "label": "John Milius – Conan il Barbaro (1982)",
+                "year": 1982,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "neverending1984",
+                "label": "Wolfgang Petersen – La Storia Infinita (1984)",
+                "year": 1984,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "labyrinth1986",
+                "label": "Jim Henson – Labyrinth (1986)",
+                "year": 1986,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "princess1987",
+                "label": "Rob Reiner – The Princess Bride (1987)",
+                "year": 1987,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "lotr2001",
+                "label": "Peter Jackson – Il Signore degli Anelli (2001-03)",
+                "year": 2001,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "got2011",
+                "label": "HBO – Game of Thrones (2011-19)",
+                "year": 2011,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "witchertv2019",
+                "label": "Netflix – The Witcher (2019–)",
+                "year": 2019,
+                "category": "Cinema/TV"
+            }
+        },
+        {
+            "data": {
+                "id": "chainmail1971",
+                "label": "Gygax & Perren – Chainmail (1971)",
+                "year": 1971,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974",
+                "label": "Gygax & Arneson – Dungeons & Dragons (1974)",
+                "year": 1974,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "tnt1975",
+                "label": "Tunnels & Trolls – RPG (1975)",
+                "year": 1975,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "runequest1978",
+                "label": "RuneQuest – RPG (1978)",
+                "year": 1978,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "coc1981",
+                "label": "Chaosium – Call of Cthulhu RPG (1981)",
+                "year": 1981,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "warhammer1983",
+                "label": "Games Workshop – Warhammer Fantasy Battle (1983)",
+                "year": 1983,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "whfrp1986",
+                "label": "Games Workshop – Warhammer Fantasy Roleplay (1986)",
+                "year": 1986,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "heroquest1989",
+                "label": "MB/GW – HeroQuest (1989)",
+                "year": 1989,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "vampire1991",
+                "label": "White Wolf – Vampire: The Masquerade (1991)",
+                "year": 1991,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "mtg1993",
+                "label": "Wizards – Magic: The Gathering (1993)",
+                "year": 1993,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "7thsea1999",
+                "label": "AEG – 7th Sea (1999)",
+                "year": 1999,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd3e2000",
+                "label": "Wizards – D&D 3rd Edition (2000)",
+                "year": 2000,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "pathfinder2009",
+                "label": "Paizo – Pathfinder RPG (2009)",
+                "year": 2009,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "gloomhaven2017",
+                "label": "Cephalofair – Gloomhaven (2017)",
+                "year": 2017,
+                "category": "GdR/GdT"
+            }
+        },
+        {
+            "data": {
+                "id": "adventure1976",
+                "label": "Crowther & Woods – Colossal Cave Adventure (1976)",
+                "year": 1976,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "zork1980",
+                "label": "Infocom – Zork (1980)",
+                "year": 1980,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "ultima1981",
+                "label": "Origin – Ultima (1981)",
+                "year": 1981,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "wizardry1981",
+                "label": "Sir-Tech – Wizardry (1981)",
+                "year": 1981,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "bards1985",
+                "label": "Interplay – The Bard's Tale (1985)",
+                "year": 1985,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "ff1987",
+                "label": "Square – Final Fantasy (1987–)",
+                "year": 1987,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "dq1986",
+                "label": "Enix – Dragon Quest (1986)",
+                "year": 1986,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "zelda1986",
+                "label": "Nintendo – The Legend of Zelda (1986)",
+                "year": 1986,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "phantasy1987",
+                "label": "Sega – Phantasy Star (1987)",
+                "year": 1987,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "pools1988",
+                "label": "SSI – Pool of Radiance (1988)",
+                "year": 1988,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "diablo1996",
+                "label": "Blizzard – Diablo (1996)",
+                "year": 1996,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "bg1998",
+                "label": "BioWare – Baldur's Gate (1998)",
+                "year": 1998,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "iwd2000",
+                "label": "Black Isle – Icewind Dale (2000)",
+                "year": 2000,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "nwn2002",
+                "label": "BioWare – Neverwinter Nights (2002)",
+                "year": 2002,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "eternaldark2002",
+                "label": "Silicon Knights – Eternal Darkness (2002)",
+                "year": 2002,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "morrowind2002",
+                "label": "Bethesda – Morrowind (2002)",
+                "year": 2002,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "wow2004",
+                "label": "Blizzard – World of Warcraft (2004)",
+                "year": 2004,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "oblivion2006",
+                "label": "Bethesda – Oblivion (2006)",
+                "year": 2006,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "witcher2007",
+                "label": "CD Projekt Red – The Witcher (2007/11/15)",
+                "year": 2007,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "dragonage2009",
+                "label": "BioWare – Dragon Age: Origins (2009)",
+                "year": 2009,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "demons2009",
+                "label": "FromSoftware – Demon's Souls (2009)",
+                "year": 2009,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "darksouls2011",
+                "label": "FromSoftware – Dark Souls (2011)",
+                "year": 2011,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "skyrim2011",
+                "label": "Bethesda – Skyrim (2011)",
+                "year": 2011,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "shadowmordor2014",
+                "label": "Monolith – Shadow of Mordor (2014)",
+                "year": 2014,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "bloodborne2015",
+                "label": "FromSoftware – Bloodborne (2015)",
+                "year": 2015,
+                "category": "Videogiochi"
+            }
+        },
+        {
+            "data": {
+                "id": "eldboss2022",
+                "label": "FromSoftware – Elden Ring (2022)",
+                "year": 2022,
+                "category": "Videogiochi"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "data": {
+                "id": "beowulf800->tolkien1954",
+                "source": "beowulf800",
+                "target": "tolkien1954",
+                "relation": "mythological",
+                "color": "#e6ab02"
+            }
+        },
+        {
+            "data": {
+                "id": "beowulf800->tolkien1977",
+                "source": "beowulf800",
+                "target": "tolkien1977",
+                "relation": "mythological",
+                "color": "#e6ab02"
+            }
+        },
+        {
+            "data": {
+                "id": "edda1220->tolkien1954",
+                "source": "edda1220",
+                "target": "tolkien1954",
+                "relation": "mythological",
+                "color": "#e6ab02"
+            }
+        },
+        {
+            "data": {
+                "id": "edda1220->tolkien1977",
+                "source": "edda1220",
+                "target": "tolkien1977",
+                "relation": "mythological",
+                "color": "#e6ab02"
+            }
+        },
+        {
+            "data": {
+                "id": "arthurian1136->malory1485",
+                "source": "arthurian1136",
+                "target": "malory1485",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "malory1485->spenser1590",
+                "source": "malory1485",
+                "target": "spenser1590",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "malory1485->white1958",
+                "source": "malory1485",
+                "target": "white1958",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "walpole1764->radcliffe1794",
+                "source": "walpole1764",
+                "target": "radcliffe1794",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "walpole1764->lewis1796",
+                "source": "walpole1764",
+                "target": "lewis1796",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "radcliffe1794->poe1840",
+                "source": "radcliffe1794",
+                "target": "poe1840",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "lewis1796->poe1840",
+                "source": "lewis1796",
+                "target": "poe1840",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "goethe1808->hoffmann1814",
+                "source": "goethe1808",
+                "target": "hoffmann1814",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "grimm1812->macdonald1858",
+                "source": "grimm1812",
+                "target": "macdonald1858",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "grimm1812->lewis1950",
+                "source": "grimm1812",
+                "target": "lewis1950",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "hoffmann1814->poe1840",
+                "source": "hoffmann1814",
+                "target": "poe1840",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "shelley1818->poe1840",
+                "source": "shelley1818",
+                "target": "poe1840",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "coleridge1798->macdonald1858",
+                "source": "coleridge1798",
+                "target": "macdonald1858",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "spenser1590->morris1896",
+                "source": "spenser1590",
+                "target": "morris1896",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "poe1840->machen1894",
+                "source": "poe1840",
+                "target": "machen1894",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "poe1840->chambers1895",
+                "source": "poe1840",
+                "target": "chambers1895",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "poe1840->stoker1897",
+                "source": "poe1840",
+                "target": "stoker1897",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "shelley1818->stoker1897",
+                "source": "shelley1818",
+                "target": "stoker1897",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "wilde1890->lovecraft1928",
+                "source": "wilde1890",
+                "target": "lovecraft1928",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "machen1894->lovecraft1928",
+                "source": "machen1894",
+                "target": "lovecraft1928",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "chambers1895->lovecraft1928",
+                "source": "chambers1895",
+                "target": "lovecraft1928",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "mrjames1904->lovecraft1928",
+                "source": "mrjames1904",
+                "target": "lovecraft1928",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "stoker1897->vampire1991",
+                "source": "stoker1897",
+                "target": "vampire1991",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "morris1896->tolkien1954",
+                "source": "morris1896",
+                "target": "tolkien1954",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "morris1896->tolkien1977",
+                "source": "morris1896",
+                "target": "tolkien1977",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "dunsany1905->tolkien1954",
+                "source": "dunsany1905",
+                "target": "tolkien1954",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "dunsany1905->tolkien1977",
+                "source": "dunsany1905",
+                "target": "tolkien1977",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "dunsany1905->lovecraft1928",
+                "source": "dunsany1905",
+                "target": "lovecraft1928",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "edd1922->tolkien1954",
+                "source": "edd1922",
+                "target": "tolkien1954",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "edd1922->tolkien1977",
+                "source": "edd1922",
+                "target": "tolkien1977",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "burroughs1912->howard1932",
+                "source": "burroughs1912",
+                "target": "howard1932",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->cas1931",
+                "source": "lovecraft1928",
+                "target": "cas1931",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "dunsany1905->howard1932",
+                "source": "dunsany1905",
+                "target": "howard1932",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "dunsany1905->cas1931",
+                "source": "dunsany1905",
+                "target": "cas1931",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->lewis1950",
+                "source": "tolkien1954",
+                "target": "lewis1950",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->lewis1950",
+                "source": "tolkien1977",
+                "target": "lewis1950",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "macdonald1858->lewis1950",
+                "source": "macdonald1858",
+                "target": "lewis1950",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "macdonald1858->tolkien1954",
+                "source": "macdonald1858",
+                "target": "tolkien1954",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "malory1485->tolkien1954",
+                "source": "malory1485",
+                "target": "tolkien1954",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "white1958->brooks1977",
+                "source": "white1958",
+                "target": "brooks1977",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "howard1932->dnd1974",
+                "source": "howard1932",
+                "target": "dnd1974",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "leiber1939->dnd1974",
+                "source": "leiber1939",
+                "target": "dnd1974",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "moorcock1961->dnd1974",
+                "source": "moorcock1961",
+                "target": "dnd1974",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "anderson1961->dnd1974",
+                "source": "anderson1961",
+                "target": "dnd1974",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->dnd1974",
+                "source": "tolkien1954",
+                "target": "dnd1974",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "chainmail1971->dnd1974",
+                "source": "chainmail1971",
+                "target": "dnd1974",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->brooks1977",
+                "source": "tolkien1954",
+                "target": "brooks1977",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->brooks1977",
+                "source": "tolkien1977",
+                "target": "brooks1977",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->donaldson1977",
+                "source": "tolkien1954",
+                "target": "donaldson1977",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->donaldson1977",
+                "source": "tolkien1977",
+                "target": "donaldson1977",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->feist1982",
+                "source": "tolkien1954",
+                "target": "feist1982",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->feist1982",
+                "source": "tolkien1977",
+                "target": "feist1982",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->pratchett1983",
+                "source": "tolkien1954",
+                "target": "pratchett1983",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->pratchett1983",
+                "source": "tolkien1977",
+                "target": "pratchett1983",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->salvatore1988",
+                "source": "tolkien1954",
+                "target": "salvatore1988",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->salvatore1988",
+                "source": "tolkien1977",
+                "target": "salvatore1988",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->jordan1990",
+                "source": "tolkien1954",
+                "target": "jordan1990",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->jordan1990",
+                "source": "tolkien1977",
+                "target": "jordan1990",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->sapkowski1990",
+                "source": "tolkien1954",
+                "target": "sapkowski1990",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->sapkowski1990",
+                "source": "tolkien1977",
+                "target": "sapkowski1990",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->goodkind1994",
+                "source": "tolkien1954",
+                "target": "goodkind1994",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->goodkind1994",
+                "source": "tolkien1977",
+                "target": "goodkind1994",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->hobb1995",
+                "source": "tolkien1954",
+                "target": "hobb1995",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->hobb1995",
+                "source": "tolkien1977",
+                "target": "hobb1995",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->martin1996",
+                "source": "tolkien1954",
+                "target": "martin1996",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->martin1996",
+                "source": "tolkien1977",
+                "target": "martin1996",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->paolini2002",
+                "source": "tolkien1954",
+                "target": "paolini2002",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->paolini2002",
+                "source": "tolkien1977",
+                "target": "paolini2002",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->troisi2004",
+                "source": "tolkien1954",
+                "target": "troisi2004",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->troisi2004",
+                "source": "tolkien1977",
+                "target": "troisi2004",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "moorcock1961->aberc2006",
+                "source": "moorcock1961",
+                "target": "aberc2006",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "cook1984->aberc2006",
+                "source": "cook1984",
+                "target": "aberc2006",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "martin1996->aberc2006",
+                "source": "martin1996",
+                "target": "aberc2006",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "leGuin1968->jordan1990",
+                "source": "leGuin1968",
+                "target": "jordan1990",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "leGuin1968->hobb1995",
+                "source": "leGuin1968",
+                "target": "hobb1995",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "leGuin1968->rothfuss2007",
+                "source": "leGuin1968",
+                "target": "rothfuss2007",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "gaimanSandman1989->gaiman1991",
+                "source": "gaimanSandman1989",
+                "target": "gaiman1991",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "gaiman1991->gaiman2001",
+                "source": "gaiman1991",
+                "target": "gaiman2001",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "gaimanSandman1989->gaiman2001",
+                "source": "gaimanSandman1989",
+                "target": "gaiman2001",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "zelazny1970->miev2000",
+                "source": "zelazny1970",
+                "target": "miev2000",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->miev2000",
+                "source": "lovecraft1928",
+                "target": "miev2000",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "jordan1990->sanderson2005",
+                "source": "jordan1990",
+                "target": "sanderson2005",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "leiber1939->lynch2006",
+                "source": "leiber1939",
+                "target": "lynch2006",
+                "relation": "lit",
+                "color": "#1b9e77"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->coc1981",
+                "source": "lovecraft1928",
+                "target": "coc1981",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->king1982",
+                "source": "lovecraft1928",
+                "target": "king1982",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "poe1840->vampire1991",
+                "source": "poe1840",
+                "target": "vampire1991",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->vampire1991",
+                "source": "lovecraft1928",
+                "target": "vampire1991",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->tnt1975",
+                "source": "dnd1974",
+                "target": "tnt1975",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->runequest1978",
+                "source": "dnd1974",
+                "target": "runequest1978",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->warhammer1983",
+                "source": "dnd1974",
+                "target": "warhammer1983",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->whfrp1986",
+                "source": "dnd1974",
+                "target": "whfrp1986",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "warhammer1983->whfrp1986",
+                "source": "warhammer1983",
+                "target": "whfrp1986",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "warhammer1983->heroquest1989",
+                "source": "warhammer1983",
+                "target": "heroquest1989",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->dnd3e2000",
+                "source": "dnd1974",
+                "target": "dnd3e2000",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd3e2000->pathfinder2009",
+                "source": "dnd3e2000",
+                "target": "pathfinder2009",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->pathfinder2009",
+                "source": "dnd1974",
+                "target": "pathfinder2009",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "heroquest1989->gloomhaven2017",
+                "source": "heroquest1989",
+                "target": "gloomhaven2017",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "mtg1993->gloomhaven2017",
+                "source": "mtg1993",
+                "target": "gloomhaven2017",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "howard1932->conan1970",
+                "source": "howard1932",
+                "target": "conan1970",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->elfquest1978",
+                "source": "tolkien1954",
+                "target": "elfquest1978",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->hellboy1993",
+                "source": "lovecraft1928",
+                "target": "hellboy1993",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "gaimanSandman1989->hellboy1993",
+                "source": "gaimanSandman1989",
+                "target": "hellboy1993",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "adventure1976->zork1980",
+                "source": "adventure1976",
+                "target": "zork1980",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->adventure1976",
+                "source": "tolkien1954",
+                "target": "adventure1976",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->adventure1976",
+                "source": "dnd1974",
+                "target": "adventure1976",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->ultima1981",
+                "source": "dnd1974",
+                "target": "ultima1981",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->wizardry1981",
+                "source": "dnd1974",
+                "target": "wizardry1981",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->bards1985",
+                "source": "dnd1974",
+                "target": "bards1985",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->pools1988",
+                "source": "dnd1974",
+                "target": "pools1988",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "wizardry1981->dq1986",
+                "source": "wizardry1981",
+                "target": "dq1986",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "wizardry1981->ff1987",
+                "source": "wizardry1981",
+                "target": "ff1987",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "ultima1981->dq1986",
+                "source": "ultima1981",
+                "target": "dq1986",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "dq1986->ff1987",
+                "source": "dq1986",
+                "target": "ff1987",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "zelda1986->ff1987",
+                "source": "zelda1986",
+                "target": "ff1987",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "ultima1981->morrowind2002",
+                "source": "ultima1981",
+                "target": "morrowind2002",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->bg1998",
+                "source": "dnd1974",
+                "target": "bg1998",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "bg1998->nwn2002",
+                "source": "bg1998",
+                "target": "nwn2002",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "bg1998->iwd2000",
+                "source": "bg1998",
+                "target": "iwd2000",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "bg1998->dragonage2009",
+                "source": "bg1998",
+                "target": "dragonage2009",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "morrowind2002->oblivion2006",
+                "source": "morrowind2002",
+                "target": "oblivion2006",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "oblivion2006->skyrim2011",
+                "source": "oblivion2006",
+                "target": "skyrim2011",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "leGuin1968->morrowind2002",
+                "source": "leGuin1968",
+                "target": "morrowind2002",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "leGuin1968->oblivion2006",
+                "source": "leGuin1968",
+                "target": "oblivion2006",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "leGuin1968->skyrim2011",
+                "source": "leGuin1968",
+                "target": "skyrim2011",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "sapkowski1990->witcher2007",
+                "source": "sapkowski1990",
+                "target": "witcher2007",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->shadowmordor2014",
+                "source": "tolkien1954",
+                "target": "shadowmordor2014",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1977->shadowmordor2014",
+                "source": "tolkien1977",
+                "target": "shadowmordor2014",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "dnd1974->wow2004",
+                "source": "dnd1974",
+                "target": "wow2004",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "warhammer1983->wow2004",
+                "source": "warhammer1983",
+                "target": "wow2004",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->wow2004",
+                "source": "tolkien1954",
+                "target": "wow2004",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->eternaldark2002",
+                "source": "lovecraft1928",
+                "target": "eternaldark2002",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->bloodborne2015",
+                "source": "lovecraft1928",
+                "target": "bloodborne2015",
+                "relation": "weird",
+                "color": "#d95f02"
+            }
+        },
+        {
+            "data": {
+                "id": "king1982->eternaldark2002",
+                "source": "king1982",
+                "target": "eternaldark2002",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "peake1946->darksouls2011",
+                "source": "peake1946",
+                "target": "darksouls2011",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "miev2000->darksouls2011",
+                "source": "miev2000",
+                "target": "darksouls2011",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "donaldson1977->darksouls2011",
+                "source": "donaldson1977",
+                "target": "darksouls2011",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "lovecraft1928->darksouls2011",
+                "source": "lovecraft1928",
+                "target": "darksouls2011",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "demons2009->darksouls2011",
+                "source": "demons2009",
+                "target": "darksouls2011",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "darksouls2011->bloodborne2015",
+                "source": "darksouls2011",
+                "target": "bloodborne2015",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "darksouls2011->eldboss2022",
+                "source": "darksouls2011",
+                "target": "eldboss2022",
+                "relation": "game",
+                "color": "#e7298a"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->eldboss2022",
+                "source": "tolkien1954",
+                "target": "eldboss2022",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "martin1996->eldboss2022",
+                "source": "martin1996",
+                "target": "eldboss2022",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "martin1996->dragonage2009",
+                "source": "martin1996",
+                "target": "dragonage2009",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->7thsea1999",
+                "source": "tolkien1954",
+                "target": "7thsea1999",
+                "relation": "ttrpg",
+                "color": "#3182bd"
+            }
+        },
+        {
+            "data": {
+                "id": "howard1932->conan1982",
+                "source": "howard1932",
+                "target": "conan1982",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "tolkien1954->lotr2001",
+                "source": "tolkien1954",
+                "target": "lotr2001",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "martin1996->got2011",
+                "source": "martin1996",
+                "target": "got2011",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "sapkowski1990->witchertv2019",
+                "source": "sapkowski1990",
+                "target": "witchertv2019",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "lewis1950->princess1987",
+                "source": "lewis1950",
+                "target": "princess1987",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "labyrinth1986->gaiman2001",
+                "source": "labyrinth1986",
+                "target": "gaiman2001",
+                "relation": "hybrid",
+                "color": "#756bb1"
+            }
+        },
+        {
+            "data": {
+                "id": "lotr2001->got2011",
+                "source": "lotr2001",
+                "target": "got2011",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        },
+        {
+            "data": {
+                "id": "got2011->witchertv2019",
+                "source": "got2011",
+                "target": "witchertv2019",
+                "relation": "visual",
+                "color": "#7570b3"
+            }
+        }
+    ]
+}
